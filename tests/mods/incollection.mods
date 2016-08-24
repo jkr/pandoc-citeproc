@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="adaptedfromhttp://mirrors.ctan.org/macros/latex/contrib/biblatex/doc/examples/biblatex-examples.bib">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">adapted from http://mirrors.ctan.org/macros/latex/contrib/biblatex/doc/examples/biblatex-examples.bib</identifier>
+</mods>
+<mods ID="brandt">
+    <titleInfo>
+        <title>Die nordischen Länder von der Mitte des 11. Jahrhunderts bis 1448</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Die nordischen Länder</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Ahasver</namePart>
+        <namePart type="family">von Brandt</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Erich</namePart>
+        <namePart type="family">Hoffmann</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1987</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Europa im Hoch- und Spätmittelalter</title>
+        </titleInfo>
+        <name type="personal">
+            <namePart type="given">Ferdinand</namePart>
+            <namePart type="family">Seibt</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+            </role>
+        </name>
+        <originInfo>
+            <publisher>Klett-Cotta</publisher>
+            <place>
+                <placeTerm type="text">Stuttgart</placeTerm>
+            </place>
+        </originInfo>
+        <genre>collection</genre>
+        <relatedItem type="host">
+            <titleInfo>
+                <title/>
+            </titleInfo>
+            <relatedItem type="host">
+                <titleInfo>
+                    <title>Handbuch der europäischen Geschichte</title>
+                </titleInfo>
+            </relatedItem>
+        </relatedItem>
+    </relatedItem>
+    <note type="annotation">An incollection entry with a series and a number. Note the format of the printed name and compare the useprefix option in the options field as well as vangennep. Also note the indextitle, and indexsorttitle fields</note>
+    <identifier type="citekey">brandt</identifier>
+    <part>
+        <detail type="number"><number>2</number></detail>
+        <extent unit="page">
+            <start>884</start>
+            <end>917</end>
+        </extent>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">german</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">ger</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+<mods ID="hyman">
+    <titleInfo>
+        <title>Aristotle’s Theory of the Intellect and its Interpretation by Averroes</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Aristotle’s Theory of the Intellect</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Arthur</namePart>
+        <namePart type="family">Hyman</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1981</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Studies in Aristotle</title>
+        </titleInfo>
+        <name type="personal">
+            <namePart type="given">Dominic</namePart>
+            <namePart type="given">J</namePart>
+            <namePart type="family">O’Meara</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+            </role>
+        </name>
+        <originInfo>
+            <publisher>The Catholic University of America Press</publisher>
+            <place>
+                <placeTerm type="text">Washington, D.C.</placeTerm>
+            </place>
+        </originInfo>
+        <genre>collection</genre>
+        <relatedItem type="host">
+            <titleInfo>
+                <title/>
+            </titleInfo>
+            <relatedItem type="host">
+                <titleInfo>
+                    <title>Studies in Philosophy and the History of Philosophy</title>
+                </titleInfo>
+            </relatedItem>
+        </relatedItem>
+    </relatedItem>
+    <note type="annotation">An incollection entry with a series and number field</note>
+    <identifier type="citekey">hyman</identifier>
+    <part>
+        <detail type="number"><number>9</number></detail>
+        <extent unit="page">
+            <start>161</start>
+            <end>191</end>
+        </extent>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+<mods ID="pines">
+    <titleInfo>
+        <title>The Limitations of Human Knowledge According to Al-Farabi, ibn Bajja, and Maimonides</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Limitations of Human Knowledge</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Shlomo</namePart>
+        <namePart type="family">Pines</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1979</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Studies in Medieval Jewish History and Literature</title>
+        </titleInfo>
+        <name type="personal">
+            <namePart type="given">Isadore</namePart>
+            <namePart type="family">Twersky</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+            </role>
+        </name>
+        <originInfo>
+            <publisher>Harvard University Press</publisher>
+            <place>
+                <placeTerm type="text">Cambridge, Mass.</placeTerm>
+            </place>
+        </originInfo>
+        <genre>collection</genre>
+    </relatedItem>
+    <note type="annotation">A typical incollection entry. Note the indextitle field</note>
+    <identifier type="citekey">pines</identifier>
+    <part>
+        <extent unit="page">
+            <start>82</start>
+            <end>109</end>
+        </extent>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: brandt
+  type: chapter
+  author:
+  - family: Brandt
+    given: Ahasver
+    dropping-particle: von
+  - family: Hoffmann
+    given: Erich
+  editor:
+  - family: Seibt
+    given: Ferdinand
+  issued:
+  - year: '1987'
+  title: Die nordischen Länder von der Mitte des 11. Jahrhunderts bis 1448
+  title-short: Die nordischen Länder
+  container-title: Europa im Hoch- und Spätmittelalter
+  collection-title: Handbuch der europäischen Geschichte
+  collection-number: '2'
+  publisher: Klett-Cotta
+  publisher-place: Stuttgart
+  page: '884-917'
+  annote: An incollection entry with a series and a number. Note the format of the
+    printed name and compare the useprefix option in the options field as well as
+    vangennep. Also note the indextitle, and indexsorttitle fields
+  language: de-DE
+
+- id: hyman
+  type: chapter
+  author:
+  - family: Hyman
+    given: Arthur
+  editor:
+  - family: O’Meara
+    given: Dominic J.
+  issued:
+  - year: '1981'
+  title: Aristotle’s theory of the intellect and its interpretation by Averroes
+  title-short: Aristotle’s theory of the intellect
+  container-title: Studies in Aristotle
+  collection-title: Studies in philosophy and the history of philosophy
+  collection-number: '9'
+  publisher: The Catholic University of America Press
+  publisher-place: Washington, D.C.
+  page: '161-191'
+  annote: An incollection entry with a series and number field
+  keyword: secondary
+  language: en-US
+
+- id: pines
+  type: chapter
+  author:
+  - family: Pines
+    given: Shlomo
+  editor:
+  - family: Twersky
+    given: Isadore
+  issued:
+  - year: '1979'
+  title: The limitations of human knowledge according to Al-Farabi, <span class="nocase">ibn
+    Bajja</span>, and Maimonides
+  title-short: Limitations of human knowledge
+  container-title: Studies in medieval Jewish history and literature
+  publisher: Harvard University Press
+  publisher-place: Cambridge, Mass.
+  page: '82-109'
+  annote: A typical incollection entry. Note the indextitle field
+  keyword: secondary
+  language: en-US
+...
+

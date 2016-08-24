@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+    <identifier type="eprint">1008.2849v1 should be used to reconstruct a Url: http://arxiv.org/abs/1008.2849v1 (cs.DS&quot; does not seem to be essential) </identifier>
+</mods>
+<mods ID="wassenberg">
+    <titleInfo>
+        <title>Faster Radix Sort via Virtual Memory and Write-Combining</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Jan</namePart>
+        <namePart type="family">Wassenberg</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Peter</namePart>
+        <namePart type="family">Sanders</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>2010-08-17</dateIssued>
+        <edition>1</edition>
+    </originInfo>
+    <typeOfResource>software, multimedia</typeOfResource>
+    <genre>web page</genre>
+    <note type="annotation">A recent online reference from arXiv using the new (April 2007 onward) identifier format. Note the eprint, eprinttype, and eprintclass fields. Also note that the arXiv reference is transformed into a clickable link if hyperref support has been enabled</note>
+    <identifier type="citekey">wassenberg</identifier>
+    <identifier type="arXiv">1008.2849v1</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: wassenberg
+  type: webpage
+  author:
+  - family: Wassenberg
+    given: Jan
+  - family: Sanders
+    given: Peter
+  issued:
+  - year: '2010'
+    month: '8'
+    day: '17'
+  title: Faster radix sort via virtual memory and write-combining
+  version: '1'
+  annote: A recent online reference from arXiv using the new (April 2007 onward) identifier
+    format. Note the eprint, eprinttype, and eprintclass fields. Also note that the
+    arXiv reference is transformed into a clickable link if hyperref support has been
+    enabled
+  abstract: Sorting algorithms are the deciding factor for the performance of common
+    operations such as removal of duplicates or database sort-merge joins. This work
+    focuses on 32-bit integer keys, optionally paired with a 32-bit value. We present
+    a fast radix sorting algorithm that builds upon a microarchitecture-aware variant
+    of counting sort
+  URL: http://arxiv.org/abs/1008.2849v1
+  language: en-US
+...
+

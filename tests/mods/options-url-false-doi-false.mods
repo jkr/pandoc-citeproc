@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="ref1">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">ref1</identifier>
+    <identifier type="doi">false.Exception:Asinstandardbiblatex</identifier>
+    <location>
+        <url>false</url>
+        <url>false.</url>
+    </location>
+</mods>
+<mods ID="item1">
+    <titleInfo>
+        <title>Title, Any Entry Type Except online</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Andy</namePart>
+        <namePart type="family">Author</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>2012</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Journal</title>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">item1</identifier>
+    <identifier type="doi">1234/5678.90</identifier>
+    <location>
+        <url>http://foo.bar</url>
+    </location>
+</mods>
+<mods ID="item2">
+    <titleInfo>
+        <title>Title, Entry Type online</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Andy</namePart>
+        <namePart type="family">Author</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>2012</dateIssued>
+    </originInfo>
+    <typeOfResource>software, multimedia</typeOfResource>
+    <genre>web page</genre>
+    <identifier type="citekey">item2</identifier>
+    <identifier type="doi">1234/5678.90</identifier>
+    <location>
+        <url>http://foo.bar</url>
+    </location>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: item1
+  type: article-journal
+  author:
+  - family: Author
+    given: Andy
+  issued:
+  - year: '2012'
+  title: Title, any entry type except online
+  container-title: Journal
+
+- id: item2
+  type: webpage
+  author:
+  - family: Author
+    given: Andy
+  issued:
+  - year: '2012'
+  title: Title, entry type online
+  container-title: Journal
+  URL: http://foo.bar
+...
+

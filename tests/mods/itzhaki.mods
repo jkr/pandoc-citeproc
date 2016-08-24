@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+    <identifier type="arXiv">hep-th/9603067</identifier>
+</mods>
+<mods ID="itzhaki">
+    <titleInfo>
+        <title>Some remarks on ’t Hooft’s S-matrix for black holes</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Nissan</namePart>
+        <namePart type="family">Itzhaki</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1996-03-11</dateIssued>
+        <edition>1</edition>
+    </originInfo>
+    <typeOfResource>software, multimedia</typeOfResource>
+    <genre>web page</genre>
+    <note type="annotation">An online reference from arXiv. Note the eprint and eprinttype fields. Also note that the arXiv reference is transformed into a clickable link if hyperref support has been enabled</note>
+    <identifier type="citekey">itzhaki</identifier>
+    <identifier type="arXiv">hep-th/9603067</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: itzhaki
+  type: webpage
+  author:
+  - family: Itzhaki
+    given: Nissan
+  issued:
+  - year: '1996'
+    month: '3'
+    day: '11'
+  title: Some remarks on ’<span class="nocase">t Hooft’s</span> S-matrix for black
+    holes
+  version: '1'
+  annote: An online reference from arXiv. Note the eprint and eprinttype fields. Also
+    note that the arXiv reference is transformed into a clickable link if hyperref
+    support has been enabled
+  abstract: We discuss the limitations of ’t Hooft’s proposal for the black hole S-matrix.
+    We find that the validity of the S-matrix implies violation of the semi-classical
+    approximation at scales large compared to the Planck scale. We also show that
+    the effect of the centrifugal barrier on the S-matrix is crucial even for large
+    transverse distances.
+  URL: http://arxiv.org/abs/hep-th/9603067
+  language: en-US
+...
+

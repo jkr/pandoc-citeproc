@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="ctan">
+    <titleInfo>
+        <title>CTAN</title>
+        <subTitle>The Comprehensive TeX Archive Network</subTitle>
+    </titleInfo>
+    <originInfo>
+        <dateIssued>2006</dateIssued>
+        <dateCaptured>2006-10-01</dateCaptured>
+    </originInfo>
+    <typeOfResource>software, multimedia</typeOfResource>
+    <genre>web page</genre>
+    <note type="annotation">This is an online entry. The url, which is given in the url field, is transformed into a clickable link if hyperref support has been enabled. Note the format of the urldate field (yyyy-mm-dd) in the database file. Also note the label field which may be used as a fallback by citation styles which need an author and\slash or a year</note>
+    <identifier type="citekey">ctan</identifier>
+    <location>
+        <url>http://www.ctan.org</url>
+    </location>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: ctan
+  type: webpage
+  issued:
+  - year: '2006'
+  accessed:
+  - year: '2006'
+    month: '10'
+    day: '1'
+  title: 'CTAN: The Comprehensive TeX Archive Network'
+  title-short: CTAN
+  annote: This is an online entry. The <span style="font-variant:small-caps;">url</span>,
+    which is given in the url field, is transformed into a clickable link if hyperref
+    support has been enabled. Note the format of the urldate field (yyyy-mm-dd) in
+    the database file. Also note the label field which may be used as a fallback by
+    citation styles which need an author and/or a year
+  URL: http://www.ctan.org
+  language: en-US
+...
+

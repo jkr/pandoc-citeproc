@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="sorace">
+    <titleInfo>
+        <title>High-Speed Digital-to-RF Converter</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Ronald</namePart>
+        <namePart type="given">E</namePart>
+        <namePart type="family">Sorace</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Victor</namePart>
+        <namePart type="given">S</namePart>
+        <namePart type="family">Reinhardt</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Steven</namePart>
+        <namePart type="given">A</namePart>
+        <namePart type="family">Vaughn</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Hughes</namePart>
+        <namePart type="given">Aircraft</namePart>
+        <namePart type="family">Company</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">patent holder</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1997-09-16</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>patentus</genre>
+    <genre authority="marcgt">patent</genre>
+    <note type="annotation">This is a patent entry with a holder field. Note the format of the type and date fields in the database file. Compare almendro, laufenberg, and kowalik</note>
+    <identifier type="citekey">sorace</identifier>
+    <part>
+        <detail type="number"><number>5668842</number></detail>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: sorace
+  type: patent
+  author:
+  - family: Sorace
+    given: Ronald E.
+  - family: Reinhardt
+    given: Victor S.
+  - family: Vaughn
+    given: Steven A.
+  issued:
+  - year: '1997'
+    month: '9'
+    day: '16'
+  title: High-speed digital-to-RF converter
+  genre: U.S. patent
+  annote: This is a patent entry with a holder field. Note the format of the type
+    and date fields in the database file. Compare almendro, laufenberg, and kowalik
+  number: '5668842'
+  language: en-US
+...
+

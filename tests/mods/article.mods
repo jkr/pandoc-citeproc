@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="-contains:-anarticleentrywithjusttherequiredfields-anarticleentrywithrequiredandalloptionalfields-notes:-year">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">- contains: - an article entry with just the required fields - an article entry with required and all optional fields - notes: - year</identifier>
+</mods>
+<mods ID="article-req">
+    <titleInfo>
+        <title>An Article Entry with Just the Required Fields</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Ann</namePart>
+        <namePart type="family">Author</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>2013-07-29</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>The Journaltitle</title>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">article-req</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">english</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+<mods ID="article-opt">
+    <titleInfo>
+        <title>An Article Entry with the Required and All Optional Fields</title>
+        <subTitle>The Subtitle. The Titleaddon</subTitle>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Ann</namePart>
+        <namePart type="given">A</namePart>
+        <namePart type="family">Author</namePart>
+        <namePart type="suffix">Jr.</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Edward</namePart>
+        <namePart type="family">Editor</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">A</namePart>
+        <namePart type="family">Editor</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">B</namePart>
+        <namePart type="family">Editor</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">C</namePart>
+        <namePart type="family">Editor</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">A</namePart>
+        <namePart type="family">Annotator</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">annotator</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">C</namePart>
+        <namePart type="family">Commentator</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">commentator</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Ted</namePart>
+        <namePart type="family">Translator</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">translator</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>2008-12-31</dateIssued>
+        <edition>version</edition>
+        <dateCaptured>2013-07-29</dateCaptured>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <language>
+        <languageTerm type="text">language</languageTerm>
+    </language>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>The Journaltitle The Journal</title>
+            <subTitle>The Journalsubtitle</subTitle>
+            <partName>newseries</partName>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+        <relatedItem type="host">
+            <titleInfo>
+                <title>The Issuetitle</title>
+                <subTitle>The Issuesubtitle</subTitle>
+            </titleInfo>
+        </relatedItem>
+        <identifier type="issn">issn</identifier>
+    </relatedItem>
+    <relatedItem type="original">
+            <titleInfo>
+                <title/>
+            </titleInfo>
+            <language>
+                <languageTerm type="text">origlanguage</languageTerm>
+            </language>
+    </relatedItem>
+    <note type="addendum">The Addendum</note>
+    <note>The Note</note>
+    <note type="publication status">inpress</note>
+    <identifier type="citekey">article-opt</identifier>
+    <identifier type="doi">10.1086/520976</identifier>
+    <identifier type="eid">eid</identifier>
+    <identifier type="eprint">eprint</identifier>
+    <identifier type="eprinttype">eprinttype</identifier>
+    <location>
+        <url>http://foo.bar.baz/</url>
+    </location>
+    <part>
+        <date>2007-08</date>
+        <detail type="volume"><number>volume</number></detail>
+        <detail type="issue"><number>issue</number></detail>
+        <detail type="number"><number>number</number></detail>
+        <detail type="page"><number>pages</number></detail>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">english</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: article-req
+  type: article-journal
+  author:
+  - family: Author
+    given: Ann
+  issued:
+  - year: '2013'
+    month: '7'
+    day: '29'
+  title: An article entry with just the required fields
+  container-title: The Journaltitle
+  language: en-US
+
+- id: article-opt
+  type: article-journal
+  author:
+  - family: Author
+    given: Ann A.
+    suffix: Jr.
+  editor:
+  - family: Editor
+    given: Edward
+  translator:
+  - family: Translator
+    given: Ted
+  issued:
+  - year: '2008'
+    month: '12'
+    day: '31'
+  accessed:
+  - year: '2013'
+    month: '7'
+    day: '29'
+  title: 'An article entry with the required and all optional fields: The subtitle.
+    The titleaddon'
+  title-short: An article entry with the required and all optional fields
+  container-title: 'The Journaltitle: The Journalsubtitle'
+  collection-title: new series
+  page: pages
+  version: version
+  volume: volume
+  issue: number, issue
+  status: in press
+  note: The Note. The Addendum
+  URL: http://foo.bar.baz/
+  DOI: 10.1086/520976
+  ISSN: issn
+  language: en-US
+...
+

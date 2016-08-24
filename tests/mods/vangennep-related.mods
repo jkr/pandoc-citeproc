@@ -1,0 +1,21 @@
+
+
+---
+references:
+- id: vangennep:related
+  type: book
+  author:
+  - family: Gennep
+    given: Arnold
+    non-dropping-particle: van
+  issued:
+  - year: '1909'
+  title: Les rites de passage
+  title-short: Rites de passage
+  publisher: Nourry
+  publisher-place: Paris
+  annote: A variant of the vangennep entry related to its translation. Note the format
+    of the related and relatedtype fields
+  language: fr-FR
+...
+

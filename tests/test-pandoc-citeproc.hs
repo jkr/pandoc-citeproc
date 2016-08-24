@@ -36,7 +36,11 @@ main = do
   fs <- filter (\f -> takeExtension f `elem` [".bibtex",".biblatex"])
            `fmap` getDirectoryContents "tests/biblio2yaml"
   biblio2yamlTests <- mapM biblio2yamlTest fs
-  let allTests = citeprocTests ++ biblio2yamlTests
+  fs' <- filter (\f -> takeExtension f == ".mods")
+           `fmap` getDirectoryContents "tests/mods"
+  modsTests <- mapM mods2yamlTest fs'
+
+  let allTests = citeprocTests ++ biblio2yamlTests ++ modsTests
   let numpasses  = length $ filter (== Passed) allTests
   let numskipped = length $ filter (== Skipped) allTests
   let numfailures = length $ filter (== Failed) allTests
@@ -106,6 +110,38 @@ biblio2yamlTest :: String -> IO TestResult
 biblio2yamlTest fp = do
   hPutStr stderr $ "[biblio2yaml/" ++ fp ++ "] "
   let yamlf = "tests/biblio2yaml/" ++ fp
+  raw <- UTF8.readFile yamlf
+  let yamlStart = "---"
+  let (biblines, yamllines) = break (== yamlStart) $ lines raw
+  let bib = unlines biblines
+  let expected = unlines yamllines
+  testProgPath <- getExecutablePath
+  let pandocCiteprocPath = takeDirectory testProgPath </> ".." </>
+        "pandoc-citeproc" </> "pandoc-citeproc"
+  (ec, result', errout) <- pipeProcess
+                     (Just [("LANG","en_US.UTF-8"),("HOME",".")])
+                     pandocCiteprocPath
+                     ["--bib2yaml", "-f", drop 1 $ takeExtension fp]
+                     (UTF8.fromStringLazy bib)
+  let result = UTF8.toStringLazy result'
+  if ec == ExitSuccess
+     then do
+       if expected == result
+          then err "PASSED" >> return Passed
+          else do
+            err $ "FAILED"
+            showDiff expected result
+            return Failed
+     else do
+       err "ERROR"
+       err $ "Error status " ++ show ec
+       err $ UTF8.toStringLazy errout
+       return Errored
+
+mods2yamlTest :: String -> IO TestResult
+mods2yamlTest fp = do       
+  hPutStr stderr $ "[mods/" ++ fp ++ "] "
+  let yamlf = "tests/mods/" ++ fp
   raw <- UTF8.readFile yamlf
   let yamlStart = "---"
   let (biblines, yamllines) = break (== yamlStart) $ lines raw

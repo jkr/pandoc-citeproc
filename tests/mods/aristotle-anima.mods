@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="aristotle:anima">
+    <titleInfo>
+        <title>De Anima</title>
+    </titleInfo>
+    <name>
+        <namePart>Aristotle</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Robert</namePart>
+        <namePart type="given">Drew</namePart>
+        <namePart type="family">Hicks</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1907</dateIssued>
+        <publisher>Cambridge University Press</publisher>
+        <place>
+            <placeTerm type="text">Cambridge</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <note type="annotation">A book entry with an author and an editor</note>
+    <identifier type="citekey">aristotle:anima</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">british</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: aristotle:anima
+  type: book
+  author:
+  - family: Aristotle
+  editor:
+  - family: Hicks
+    given: Robert Drew
+  issued:
+  - year: '1907'
+  title: De anima
+  publisher: Cambridge University Press
+  publisher-place: Cambridge
+  annote: A book entry with an author and an editor
+  keyword: primary
+  language: en-GB
+...
+

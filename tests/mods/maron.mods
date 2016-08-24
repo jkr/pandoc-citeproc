@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="maron">
+    <titleInfo>
+        <title>Animal Triste</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Monika</namePart>
+        <namePart type="family">Maron</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Brigitte</namePart>
+        <namePart type="family">Goldstein</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">translator</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>2000</dateIssued>
+        <publisher>University of Nebraska Press</publisher>
+        <place>
+            <placeTerm type="text">Lincoln</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <relatedItem type="original">
+            <titleInfo>
+                <title/>
+            </titleInfo>
+            <language>
+                <languageTerm type="text">german</languageTerm>
+                <languageTerm type="code" authority="iso639-2b">ger</languageTerm>
+            </language>
+    </relatedItem>
+    <note type="annotation">An English translation of a German novel with a French title. In other words: a book entry with a translator field. Note the origlanguage field which is concatenated with the translator</note>
+    <identifier type="citekey">maron</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: maron
+  type: book
+  author:
+  - family: Maron
+    given: Monika
+  translator:
+  - family: Goldstein
+    given: Brigitte
+  issued:
+  - year: '2000'
+  title: Animal triste
+  title-short: Animal triste
+  publisher: University of Nebraska Press
+  publisher-place: Lincoln
+  annote: 'An English translation of a German novel with a French title. In other
+    words: a book entry with a translator field. Note the origlanguage field which
+    is concatenated with the translator'
+  language: en-US
+...
+

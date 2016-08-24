@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="knuth:ct:a">
+    <titleInfo>
+        <title>The \TeX book</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>\TeX book</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Donald</namePart>
+        <namePart type="given">E</namePart>
+        <namePart type="family">Knuth</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1984</dateIssued>
+        <publisher>Addison-Wesley</publisher>
+        <place>
+            <placeTerm type="text">Reading, Mass.</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Computers &amp; Typesetting</title>
+        </titleInfo>
+        <part>
+            <detail type="volume"><number>A</number></detail>
+        </part>
+    </relatedItem>
+    <note type="annotation">The first volume of a five-volume book. Note the sorttitle and sortyear fields. We want this volume to be listed after the entry referring to the entire five-volume set. Also note the indextitle and indexsorttitle fields. Indexing packages that don’t generate robust index entries require some control sequences to be protected from expansion</note>
+    <identifier type="citekey">knuth:ct:a</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: knuth:ct:a
+  type: book
+  author:
+  - family: Knuth
+    given: Donald E.
+  issued:
+  - year: '1984'
+  title: Computers & typesetting
+  volume-title: The TeX book
+  publisher: Addison-Wesley
+  publisher-place: Reading, Mass.
+  volume: A
+  annote: The first volume of a five-volume book. Note the sorttitle and sortyear
+    fields. We want this volume to be listed after the entry referring to the entire
+    five-volume set. Also note the indextitle and indexsorttitle fields. Indexing
+    packages that don’t generate robust index entries require some control sequences
+    to be protected from expansion
+  language: en-US
+...
+

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="sarfraz">
+    <titleInfo>
+        <title>Technical section: An algorithm for automatic capturing of the font outlines</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">M</namePart>
+        <namePart type="family">Sarfraz</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">M</namePart>
+        <namePart type="given">F</namePart>
+        <namePart type="given">A</namePart>
+        <namePart type="family">Razzak</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>2002</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Computers and Graphics</title>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+        <identifier type="issn">0097-8493</identifier>
+    </relatedItem>
+    <note type="annotation">An article entry with an issn field</note>
+    <identifier type="citekey">sarfraz</identifier>
+    <part>
+        <date>2002</date>
+        <detail type="volume"><number>26</number></detail>
+        <detail type="number"><number>5</number></detail>
+        <extent unit="page">
+            <start>795</start>
+            <end>804</end>
+        </extent>
+    </part>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: sarfraz
+  type: article-journal
+  author:
+  - family: Sarfraz
+    given: M.
+  - family: Razzak
+    given: M. F. A.
+  issued:
+  - year: '2002'
+  title: 'Technical section: An algorithm for automatic capturing of the font outlines'
+  title-short: Technical section
+  container-title: Computers and Graphics
+  page: '795-804'
+  volume: '26'
+  issue: '5'
+  annote: An article entry with an issn field
+  ISSN: '0097-8493'
+...
+

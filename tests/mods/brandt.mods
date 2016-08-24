@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="brandt">
+    <titleInfo>
+        <title>Die nordischen Länder von der Mitte des 11. Jahrhunderts bis 1448</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Die nordischen Länder</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Ahasver</namePart>
+        <namePart type="family">von Brandt</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Erich</namePart>
+        <namePart type="family">Hoffmann</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1987</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Europa im Hoch- und Spätmittelalter</title>
+        </titleInfo>
+        <name type="personal">
+            <namePart type="given">Ferdinand</namePart>
+            <namePart type="family">Seibt</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+            </role>
+        </name>
+        <originInfo>
+            <publisher>Klett-Cotta</publisher>
+            <place>
+                <placeTerm type="text">Stuttgart</placeTerm>
+            </place>
+        </originInfo>
+        <genre>collection</genre>
+        <relatedItem type="host">
+            <titleInfo>
+                <title/>
+            </titleInfo>
+            <relatedItem type="host">
+                <titleInfo>
+                    <title>Handbuch der europäischen Geschichte</title>
+                </titleInfo>
+            </relatedItem>
+        </relatedItem>
+    </relatedItem>
+    <note type="annotation">An incollection entry with a series and a number. Note the format of the printed name and compare the useprefix option in the options field as well as vangennep. Also note the indextitle, and indexsorttitle fields</note>
+    <identifier type="citekey">brandt</identifier>
+    <part>
+        <detail type="number"><number>2</number></detail>
+        <extent unit="page">
+            <start>884</start>
+            <end>917</end>
+        </extent>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">german</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">ger</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: brandt
+  type: chapter
+  author:
+  - family: Brandt
+    given: Ahasver
+    dropping-particle: von
+  - family: Hoffmann
+    given: Erich
+  editor:
+  - family: Seibt
+    given: Ferdinand
+  issued:
+  - year: '1987'
+  title: Die nordischen Länder von der Mitte des 11. Jahrhunderts bis 1448
+  title-short: Die nordischen Länder
+  container-title: Europa im Hoch- und Spätmittelalter
+  collection-title: Handbuch der europäischen Geschichte
+  collection-number: '2'
+  publisher: Klett-Cotta
+  publisher-place: Stuttgart
+  page: '884-917'
+  annote: An incollection entry with a series and a number. Note the format of the
+    printed name and compare the useprefix option in the options field as well as
+    vangennep. Also note the indextitle, and indexsorttitle fields
+  language: de-DE
+...
+

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="gonzalez">
+    <titleInfo>
+        <title>The Ghost of John Wayne and Other Stories</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Ghost of John Wayne</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Ray</namePart>
+        <namePart type="family">Gonzalez</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>2001</dateIssued>
+        <publisher>The University of Arizona Press</publisher>
+        <place>
+            <placeTerm type="text">Tucson</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <note type="annotation">A collection of short stories. This is a book entry. Note the sorttitle and indextitle fields in the database file. There’s also an isbn field</note>
+    <identifier type="isbn">0-816-52066-6</identifier>
+    <identifier type="citekey">gonzalez</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: gonzalez
+  type: book
+  author:
+  - family: Gonzalez
+    given: Ray
+  issued:
+  - year: '2001'
+  title: The ghost of John Wayne and other stories
+  title-short: Ghost of John Wayne
+  publisher: The University of Arizona Press
+  publisher-place: Tucson
+  annote: A collection of short stories. This is a book entry. Note the sorttitle
+    and indextitle fields in the database file. There’s also an isbn field
+  ISBN: '0-816-52066-6'
+  language: en-US
+...
+

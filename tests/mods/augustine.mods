@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="augustine">
+    <titleInfo>
+        <title>Heterogeneous catalysis for the synthetic chemist</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Heterogeneous catalysis</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Robert</namePart>
+        <namePart type="given">L</namePart>
+        <namePart type="family">Augustine</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1995</dateIssued>
+        <publisher>Marcel Dekker</publisher>
+        <place>
+            <placeTerm type="text">New York</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <note type="annotation">A plain book entry</note>
+    <identifier type="citekey">augustine</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: augustine
+  type: book
+  author:
+  - family: Augustine
+    given: Robert L.
+  issued:
+  - year: '1995'
+  title: Heterogeneous catalysis for the synthetic chemist
+  title-short: Heterogeneous catalysis
+  publisher: Marcel Dekker
+  publisher-place: New York
+  annote: A plain book entry
+  language: en-US
+...
+

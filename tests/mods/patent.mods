@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="adaptedfromhttp://mirrors.ctan.org/macros/latex/contrib/biblatex/doc/examples/biblatex-examples.bibTODO:IsthereaCSLcounterpartforthebiblatexfield&quot;holder&quot;?">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">adapted from http://mirrors.ctan.org/macros/latex/contrib/biblatex/doc/examples/biblatex-examples.bib TODO: Is there a CSL counterpart for the biblatex field &quot;holder&quot;?</identifier>
+</mods>
+<mods ID="almendro">
+    <titleInfo>
+        <title>Elektromagnetisches Signalhorn</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">José</namePart>
+        <namePart type="given">L</namePart>
+        <namePart type="family">Almendro</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Jacinto</namePart>
+        <namePart type="family">Martín</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Alberto</namePart>
+        <namePart type="family">Sánchez</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Fernando</namePart>
+        <namePart type="family">Nozal</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1998</dateIssued>
+        <place>
+            <placeTerm type="text">countryfr and countryuk and countryde</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">patent</genre>
+    <note type="annotation">This is a patent entry with a location field. The number is given in the number field. Note the format of the location field in the database file. Compare laufenberg, sorace, and kowalik</note>
+    <identifier type="citekey">almendro</identifier>
+    <part>
+        <detail type="number"><number>EU-29702195U</number></detail>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">german</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">ger</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+<mods ID="kowalik">
+    <titleInfo>
+        <title>Estimateur d’un défaut de fonctionnement d’un modulateur en quadrature et étage de modulation l’utilisant</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">F</namePart>
+        <namePart type="family">Kowalik</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">M</namePart>
+        <namePart type="family">Isard</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1995-01-11</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>patreqfr</genre>
+    <genre authority="marcgt">patent</genre>
+    <note type="annotation">This is a patent entry for a French patent request with a full date. The number is given in the number field. Note the format of the type and date fields in the database file. Compare almendro, laufenberg, and sorace</note>
+    <identifier type="citekey">kowalik</identifier>
+    <part>
+        <detail type="number"><number>9500261</number></detail>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">french</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">fre</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+<mods ID="laufenberg">
+    <titleInfo>
+        <title>Elektrische Einrichtung und Betriebsverfahren</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Xaver</namePart>
+        <namePart type="family">Laufenberg</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Dominique</namePart>
+        <namePart type="family">Eynius</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Helmut</namePart>
+        <namePart type="family">Suelzle</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Stephan</namePart>
+        <namePart type="family">Usbeck</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Matthias</namePart>
+        <namePart type="family">Spaeth</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Miriam</namePart>
+        <namePart type="family">Neuser-Hoffmann</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Christian</namePart>
+        <namePart type="family">Myrzik</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Manfred</namePart>
+        <namePart type="family">Schmid</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Franz</namePart>
+        <namePart type="family">Nietfeld</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Alexander</namePart>
+        <namePart type="family">Thiel</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Harald</namePart>
+        <namePart type="family">Braun</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Norbert</namePart>
+        <namePart type="family">Ebner</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Robert</namePart>
+        <namePart type="given">Bosch</namePart>
+        <namePart type="family">GmbH</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">patent holder</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Daimler</namePart>
+        <namePart type="given">Chrysler</namePart>
+        <namePart type="family">AG</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">patent holder</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Bayerische</namePart>
+        <namePart type="given">Motoren</namePart>
+        <namePart type="given">Werke</namePart>
+        <namePart type="family">AG</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">patent holder</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>2006-09-13</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>patenteu</genre>
+    <genre authority="marcgt">patent</genre>
+    <note type="annotation">This is a patent entry with a holder field. Note the format of the type and location fields in the database file. Compare almendro, sorace, and kowalik</note>
+    <identifier type="citekey">laufenberg</identifier>
+    <part>
+        <detail type="number"><number>1700367</number></detail>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">german</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">ger</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+<mods ID="sorace">
+    <titleInfo>
+        <title>High-Speed Digital-to-RF Converter</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Ronald</namePart>
+        <namePart type="given">E</namePart>
+        <namePart type="family">Sorace</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Victor</namePart>
+        <namePart type="given">S</namePart>
+        <namePart type="family">Reinhardt</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Steven</namePart>
+        <namePart type="given">A</namePart>
+        <namePart type="family">Vaughn</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Hughes</namePart>
+        <namePart type="given">Aircraft</namePart>
+        <namePart type="family">Company</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">patent holder</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1997-09-16</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>patentus</genre>
+    <genre authority="marcgt">patent</genre>
+    <note type="annotation">This is a patent entry with a holder field. Note the format of the type and date fields in the database file. Compare almendro, laufenberg, and kowalik</note>
+    <identifier type="citekey">sorace</identifier>
+    <part>
+        <detail type="number"><number>5668842</number></detail>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: almendro
+  type: patent
+  author:
+  - family: Almendro
+    given: José L.
+  - family: Martín
+    given: Jacinto
+  - family: Sánchez
+    given: Alberto
+  - family: Nozal
+    given: Fernando
+  issued:
+  - year: '1998'
+  title: Elektromagnetisches Signalhorn
+  jurisdiction: France; United Kingdom; Germany
+  annote: This is a patent entry with a location field. The number is given in the
+    number field. Note the format of the location field in the database file. Compare
+    laufenberg, sorace, and kowalik
+  number: EU-29702195U
+  language: de-DE
+
+- id: kowalik
+  type: patent
+  author:
+  - family: Kowalik
+    given: F.
+  - family: Isard
+    given: M.
+  issued:
+  - year: '1995'
+    month: '1'
+    day: '11'
+  title: Estimateur d’un défaut de fonctionnement d’un modulateur en quadrature et
+    étage de modulation l’utilisant
+  genre: French patent request
+  annote: This is a patent entry for a French patent request with a full date. The
+    number is given in the number field. Note the format of the type and date fields
+    in the database file. Compare almendro, laufenberg, and sorace
+  number: '9500261'
+  language: fr-FR
+
+- id: laufenberg
+  type: patent
+  author:
+  - family: Laufenberg
+    given: Xaver
+  - family: Eynius
+    given: Dominique
+  - family: Suelzle
+    given: Helmut
+  - family: Usbeck
+    given: Stephan
+  - family: Spaeth
+    given: Matthias
+  - family: Neuser-Hoffmann
+    given: Miriam
+  - family: Myrzik
+    given: Christian
+  - family: Schmid
+    given: Manfred
+  - family: Nietfeld
+    given: Franz
+  - family: Thiel
+    given: Alexander
+  - family: Braun
+    given: Harald
+  - family: Ebner
+    given: Norbert
+  issued:
+  - year: '2006'
+    month: '9'
+    day: '13'
+  title: Elektrische Einrichtung und Betriebsverfahren
+  genre: European patent
+  annote: This is a patent entry with a holder field. Note the format of the type
+    and location fields in the database file. Compare almendro, sorace, and kowalik
+  abstract: The invention relates to an electric device comprising a generator, in
+    particular for use in the vehicle electric system of a motor vehicle and a controller
+    for controlling the generator voltage. The device is equipped with a control zone,
+    in which the voltage is controlled and zones, in which the torque is controlled.
+    The invention also relates to methods for operating a device of this type.
+  number: '1700367'
+  language: de-DE
+
+- id: sorace
+  type: patent
+  author:
+  - family: Sorace
+    given: Ronald E.
+  - family: Reinhardt
+    given: Victor S.
+  - family: Vaughn
+    given: Steven A.
+  issued:
+  - year: '1997'
+    month: '9'
+    day: '16'
+  title: High-speed digital-to-RF converter
+  genre: U.S. patent
+  annote: This is a patent entry with a holder field. Note the format of the type
+    and date fields in the database file. Compare almendro, laufenberg, and kowalik
+  number: '5668842'
+  language: en-US
+...
+

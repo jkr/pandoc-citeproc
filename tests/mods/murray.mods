@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="murray">
+    <titleInfo>
+        <title>Alkanethiolate gold cluster molecules with core diameters from 1.5 to 5.2 nm</title>
+        <subTitle>Core and monolayer properties as a function of core size</subTitle>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Alkanethiolate gold cluster molecules</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Michael</namePart>
+        <namePart type="given">J</namePart>
+        <namePart type="family">Hostetler</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Julia</namePart>
+        <namePart type="given">E</namePart>
+        <namePart type="family">Wingate</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Chuan-Jian</namePart>
+        <namePart type="family">Zhong</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Jay</namePart>
+        <namePart type="given">E</namePart>
+        <namePart type="family">Harris</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Richard</namePart>
+        <namePart type="given">W</namePart>
+        <namePart type="family">Vachet</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Michael</namePart>
+        <namePart type="given">R</namePart>
+        <namePart type="family">Clark</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">J</namePart>
+        <namePart type="given">David</namePart>
+        <namePart type="family">Londono</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Stephen</namePart>
+        <namePart type="given">J</namePart>
+        <namePart type="family">Green</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Jennifer</namePart>
+        <namePart type="given">J</namePart>
+        <namePart type="family">Stokes</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">George</namePart>
+        <namePart type="given">D</namePart>
+        <namePart type="family">Wignall</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Gary</namePart>
+        <namePart type="given">L</namePart>
+        <namePart type="family">Glish</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Marc</namePart>
+        <namePart type="given">D</namePart>
+        <namePart type="family">Porter</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Neal</namePart>
+        <namePart type="given">D</namePart>
+        <namePart type="family">Evans</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Royce</namePart>
+        <namePart type="given">W</namePart>
+        <namePart type="family">Murray</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1998</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Langmuir</title>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <note type="annotation">An article entry with \arabicauthor authors. By default, long author and editor lists are automatically truncated. This is configurable</note>
+    <identifier type="citekey">murray</identifier>
+    <part>
+        <detail type="volume"><number>14</number></detail>
+        <detail type="number"><number>1</number></detail>
+        <extent unit="page">
+            <start>17</start>
+            <end>30</end>
+        </extent>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: murray
+  type: article-journal
+  author:
+  - family: Hostetler
+    given: Michael J.
+  - family: Wingate
+    given: Julia E.
+  - family: Zhong
+    given: Chuan-Jian
+  - family: Harris
+    given: Jay E.
+  - family: Vachet
+    given: Richard W.
+  - family: Clark
+    given: Michael R.
+  - family: Londono
+    given: J. David
+  - family: Green
+    given: Stephen J.
+  - family: Stokes
+    given: Jennifer J.
+  - family: Wignall
+    given: George D.
+  - family: Glish
+    given: Gary L.
+  - family: Porter
+    given: Marc D.
+  - family: Evans
+    given: Neal D.
+  - family: Murray
+    given: Royce W.
+  issued:
+  - year: '1998'
+  title: 'Alkanethiolate gold cluster molecules with core diameters from 1.5 to
+    5.2 <span class="nocase">nm</span>: Core and monolayer properties as a function
+    of core size'
+  title-short: Alkanethiolate gold cluster molecules
+  container-title: Langmuir
+  page: '17-30'
+  volume: '14'
+  issue: '1'
+  annote: An article entry with author authors. By default, long author and editor
+    lists are automatically truncated. This is configurable
+  language: en-US
+...
+

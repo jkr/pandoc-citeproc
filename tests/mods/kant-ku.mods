@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="kant:ku">
+    <titleInfo>
+        <title>Kritik der Urtheilskraft</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Immanuel</namePart>
+        <namePart type="family">Kant</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1968</dateIssued>
+        <publisher>Walter de Gruyter</publisher>
+        <place>
+            <placeTerm type="text">Berlin</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>book chapter</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Kritik der praktischen Vernunft. Kritik der Urtheilskraft</title>
+        </titleInfo>
+        <name type="personal">
+            <namePart type="given">Immanuel</namePart>
+            <namePart type="family">Kant</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">author</roleTerm>
+            </role>
+        </name>
+        <originInfo>
+            <issuance>monographic</issuance>
+        </originInfo>
+        <genre authority="marcgt">book</genre>
+        <relatedItem type="host">
+            <titleInfo>
+                <title>Kants Werke. Akademie Textausgabe</title>
+            </titleInfo>
+        </relatedItem>
+    </relatedItem>
+    <note type="annotation">An edition of Kant’s Collected Works, volume five. This is an inbook entry which explicitly refers to the Critique of Judgment only, not to the entire fifth volume</note>
+    <identifier type="citekey">kant:ku</identifier>
+    <part>
+        <detail type="volume"><number>5</number></detail>
+        <extent unit="page">
+            <start>165</start>
+            <end>485</end>
+        </extent>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">german</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">ger</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: kant:ku
+  type: chapter
+  author:
+  - family: Kant
+    given: Immanuel
+  container-author:
+  - family: Kant
+    given: Immanuel
+  issued:
+  - year: '1968'
+  title: Kritik der Urtheilskraft
+  container-title: Kants Werke. Akademie Textausgabe
+  volume-title: Kritik der praktischen Vernunft. Kritik der Urtheilskraft
+  publisher: Walter de Gruyter
+  publisher-place: Berlin
+  page: '165-485'
+  volume: '5'
+  annote: An edition of Kant’s *Collected Works*, volume five. This is an inbook entry
+    which explicitly refers to the *Critique of Judgment* only, not to the entire
+    fifth volume
+  language: de-DE
+...
+

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="item1">
+    <titleInfo>
+        <title>The Title \textnormalof this book</title>
+    </titleInfo>
+    <originInfo>
+        <issuance>monographic</issuance>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <identifier type="citekey">item1</identifier>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: item1
+  type: book
+  title: The title <span class="nodecor">of this book</span>
+...
+

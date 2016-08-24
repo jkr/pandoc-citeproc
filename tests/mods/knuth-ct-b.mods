@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="knuth:ct:b">
+    <titleInfo>
+        <title>\TeX: The Program</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>\TeX</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Donald</namePart>
+        <namePart type="given">E</namePart>
+        <namePart type="family">Knuth</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1986</dateIssued>
+        <publisher>Addison-Wesley</publisher>
+        <place>
+            <placeTerm type="text">Reading, Mass.</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Computers &amp; Typesetting</title>
+        </titleInfo>
+        <part>
+            <detail type="volume"><number>B</number></detail>
+        </part>
+    </relatedItem>
+    <note type="annotation">The second volume of a five-volume book. Note the sorttitle and sortyear fields. Also note the indexsorttitle field</note>
+    <identifier type="citekey">knuth:ct:b</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: knuth:ct:b
+  type: book
+  author:
+  - family: Knuth
+    given: Donald E.
+  issued:
+  - year: '1986'
+  title: Computers & typesetting
+  title-short: TeX
+  volume-title: 'TeX: The program'
+  publisher: Addison-Wesley
+  publisher-place: Reading, Mass.
+  volume: B
+  annote: The second volume of a five-volume book. Note the sorttitle and sortyear
+    fields. Also note the indexsorttitle field
+  language: en-US
+...
+

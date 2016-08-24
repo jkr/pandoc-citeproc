@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="bertram">
+    <titleInfo>
+        <title>Gromov invariants for holomorphic maps on Riemann surfaces</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Gromov invariants</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Aaron</namePart>
+        <namePart type="family">Bertram</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Richard</namePart>
+        <namePart type="family">Wentworth</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1996</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>J. Amer. Math. Soc.</title>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <note type="annotation">An article entry with a volume and a number field</note>
+    <identifier type="citekey">bertram</identifier>
+    <part>
+        <detail type="volume"><number>9</number></detail>
+        <detail type="number"><number>2</number></detail>
+        <extent unit="page">
+            <start>529</start>
+            <end>571</end>
+        </extent>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: bertram
+  type: article-journal
+  author:
+  - family: Bertram
+    given: Aaron
+  - family: Wentworth
+    given: Richard
+  issued:
+  - year: '1996'
+  title: Gromov invariants for holomorphic maps on Riemann surfaces
+  title-short: Gromov invariants
+  container-title: J. Amer. Math. Soc.
+  page: '529-571'
+  volume: '9'
+  issue: '2'
+  annote: An article entry with a volume and a number field
+  language: en-US
+...
+

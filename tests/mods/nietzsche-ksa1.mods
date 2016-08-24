@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="nietzsche:ksa1">
+    <titleInfo>
+        <title>Die Geburt der Tragödie. Unzeitgemäße Betrachtungen I–IV. Nachgelassene Schriften 1870–1973</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Sämtliche Werke I</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Friedrich</namePart>
+        <namePart type="family">Nietzsche</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Giorgio</namePart>
+        <namePart type="family">Colli</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Mazzino</namePart>
+        <namePart type="family">Montinari</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1988</dateIssued>
+        <publisher>Deutscher Taschenbuch-Verlag and Walter de Gruyter</publisher>
+        <place>
+            <placeTerm type="text">München and Berlin and New York</placeTerm>
+        </place>
+        <edition>2</edition>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Sämtliche Werke</title>
+            <subTitle>Kritische Studienausgabe</subTitle>
+        </titleInfo>
+        <part>
+            <detail type="volume"><number>1</number></detail>
+        </part>
+    </relatedItem>
+    <note type="annotation">A single volume from the critical edition of Nietzsche’s works. This book entry explicitly refers to the first volume only. Note the title and maintitle fields. Also note the sorttitle and sortyear fields. We want this entry to be listed after the entry referring to the entire edition</note>
+    <identifier type="citekey">nietzsche:ksa1</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">german</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">ger</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: nietzsche:ksa1
+  type: book
+  author:
+  - family: Nietzsche
+    given: Friedrich
+  editor:
+  - family: Colli
+    given: Giorgio
+  - family: Montinari
+    given: Mazzino
+  container-author:
+  - family: Nietzsche
+    given: Friedrich
+  issued:
+  - year: '1988'
+  title: 'Sämtliche Werke: Kritische Studienausgabe'
+  volume-title: Die Geburt der Tragödie. Unzeitgemäße Betrachtungen I–IV. Nachgelassene
+    Schriften 1870–1973
+  publisher: Deutscher Taschenbuch-Verlag; Walter de Gruyter
+  publisher-place: München; Berlin; New York
+  volume: '1'
+  edition: '2'
+  annote: A single volume from the critical edition of Nietzsche’s works. This book
+    entry explicitly refers to the first volume only. Note the title and maintitle
+    fields. Also note the sorttitle and sortyear fields. We want this entry to be
+    listed after the entry referring to the entire edition
+  language: de-DE
+...
+

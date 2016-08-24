@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="adaptedfromhttp://mirrors.ctan.org/macros/latex/contrib/biblatex/doc/examples/biblatex-examples.bib">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">adapted from http://mirrors.ctan.org/macros/latex/contrib/biblatex/doc/examples/biblatex-examples.bib</identifier>
+</mods>
+<mods ID="averroes/bland">
+    <titleInfo>
+        <title>The Epistle on the Possibility of Conjunction with the Active Intellect by Ibn Rushd with the Commentary of Moses Narboni</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Possibility of Conjunction</title>
+    </titleInfo>
+    <name>
+        <namePart>Averroes</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Kalman</namePart>
+        <namePart type="given">P</namePart>
+        <namePart type="family">Bland</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Kalman</namePart>
+        <namePart type="given">P</namePart>
+        <namePart type="family">Bland</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">translator</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1982</dateIssued>
+        <publisher>Jewish Theological Seminary of America</publisher>
+        <place>
+            <placeTerm type="text">New York</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Moreshet: Studies in Jewish History, Literature and Thought</title>
+        </titleInfo>
+    </relatedItem>
+    <note type="annotation">A book entry with a series and a number. Note the concatenation of the editor and translator fields as well as the indextitle field</note>
+    <identifier type="citekey">averroes/bland</identifier>
+    <part>
+        <detail type="number"><number>7</number></detail>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+<mods ID="averroes/hannes">
+    <titleInfo>
+        <title>Des Averroës Abhandlung: \mkbibquoteÜber die Möglichkeit der Conjunktion oder \mkbibquoteÜber den materiellen Intellekt</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Über die Möglichkeit der Conjunktion</title>
+    </titleInfo>
+    <name>
+        <namePart>Averroes</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Ludwig</namePart>
+        <namePart type="family">Hannes</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Ludwig</namePart>
+        <namePart type="family">Hannes</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">annotator</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Ludwig</namePart>
+        <namePart type="family">Hannes</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">translator</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1892</dateIssued>
+        <publisher>C. A. Kaemmerer</publisher>
+        <place>
+            <placeTerm type="text">Halle an der Saale</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <note type="annotation">An annotated edition. Note the concatenation of the editor, translator, and annotator fields. Also note the shorttitle, indextitle, sorttitle, and indexsorttitle fields</note>
+    <identifier type="citekey">averroes/hannes</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">german</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">ger</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+<mods ID="averroes/hercz">
+    <titleInfo>
+        <title>Drei Abhandlungen über die Conjunction des separaten Intellects mit dem Menschen</title>
+        <subTitle>Von Averroes (Vater und Sohn), aus dem Arabischen übersetzt von Samuel Ibn Tibbon</subTitle>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Drei Abhandlungen</title>
+    </titleInfo>
+    <name>
+        <namePart>Averroes</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">J</namePart>
+        <namePart type="family">Hercz</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">J</namePart>
+        <namePart type="family">Hercz</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">translator</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1869</dateIssued>
+        <publisher>S. Hermann</publisher>
+        <place>
+            <placeTerm type="text">Berlin</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <note type="annotation">A book entry. Note the concatenation of the editor and translator fields as well as the indextitle and indexsorttitle fields</note>
+    <identifier type="citekey">averroes/hercz</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">german</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">ger</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: averroes/bland
+  type: book
+  author:
+  - family: Averroes
+  editor:
+  - family: Bland
+    given: Kalman P.
+  translator:
+  - family: Bland
+    given: Kalman P.
+  issued:
+  - year: '1982'
+  title: The epistle on the possibility of conjunction with the active intellect by
+    Ibn Rushd with the commentary of Moses Narboni
+  title-short: Possibility of conjunction
+  collection-title: '<span class="nocase">Moreshet: Studies in Jewish History, Literature
+    and Thought</span>'
+  collection-number: '7'
+  publisher: Jewish Theological Seminary of America
+  publisher-place: New York
+  annote: A book entry with a series and a number. Note the concatenation of the editor
+    and translator fields as well as the indextitle field
+  keyword: primary
+  language: en-US
+
+- id: averroes/hannes
+  type: book
+  author:
+  - family: Averroes
+  editor:
+  - family: Hannes
+    given: Ludwig
+  translator:
+  - family: Hannes
+    given: Ludwig
+  issued:
+  - year: '1892'
+  title: 'Des Averroës Abhandlung: “Über die Möglichkeit der Conjunktion” oder “Über
+    den materiellen Intellekt”'
+  title-short: Über die Möglichkeit der Conjunktion
+  publisher: C. A. Kaemmerer
+  publisher-place: Halle an der Saale
+  annote: An annotated edition. Note the concatenation of the editor, translator,
+    and annotator fields. Also note the shorttitle, indextitle, sorttitle, and indexsorttitle
+    fields
+  keyword: primary
+  language: de-DE
+
+- id: averroes/hercz
+  type: book
+  author:
+  - family: Averroes
+  editor:
+  - family: Hercz
+    given: J.
+  translator:
+  - family: Hercz
+    given: J.
+  issued:
+  - year: '1869'
+  title: 'Drei Abhandlungen über die Conjunction des separaten Intellects mit dem
+    Menschen: Von Averroes (Vater und Sohn), aus dem Arabischen übersetzt von Samuel
+    Ibn Tibbon'
+  title-short: Drei Abhandlungen
+  publisher: S. Hermann
+  publisher-place: Berlin
+  annote: A book entry. Note the concatenation of the editor and translator fields
+    as well as the indextitle and indexsorttitle fields
+  keyword: primary
+  language: de-DE
+...
+

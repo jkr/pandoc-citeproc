@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="angenendt">
+    <titleInfo>
+        <title>In Honore Salvatoris – Vom Sinn und Unsinn der Patrozinienkunde</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>In Honore Salvatoris</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Arnold</namePart>
+        <namePart type="family">Angenendt</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>2002</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Revue d’Histoire Ecclésiastique</title>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <note type="annotation">A German article in a French journal. Apart from that, a typical article entry. Note the indextitle field</note>
+    <identifier type="citekey">angenendt</identifier>
+    <part>
+        <detail type="volume"><number>97</number></detail>
+        <extent unit="page">
+            <start>431</start>
+            <end>456,791</end>
+        </extent>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">german</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">ger</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: angenendt
+  type: article-journal
+  author:
+  - family: Angenendt
+    given: Arnold
+  issued:
+  - year: '2002'
+  title: In Honore Salvatoris – Vom Sinn und Unsinn der Patrozinienkunde
+  title-short: In Honore Salvatoris
+  container-title: Revue d’Histoire Ecclésiastique
+  page: 431-456, 791-823
+  volume: '97'
+  annote: A German article in a French journal. Apart from that, a typical article
+    entry. Note the indextitle field
+  language: de-DE
+...
+

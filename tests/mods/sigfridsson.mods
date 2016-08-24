@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="sigfridsson">
+    <titleInfo>
+        <title>Comparison of methods for deriving atomic charges from the electrostatic potential and moments</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Emma</namePart>
+        <namePart type="family">Sigfridsson</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Ulf</namePart>
+        <namePart type="family">Ryde</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1998</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Journal of Computational Chemistry</title>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <abstract>Four methods for deriving partial atomic charges from the quantum chemical electrostatic potential (CHELP, CHELPG, Merz-Kollman, and RESP) have been compared and critically evaluated. It is shown that charges strongly depend on how and where the potential points are selected. Two alternative methods are suggested to avoid the arbitrariness in the point-selection schemes and van der Waals exclusion radii: CHELP-BOW, which also estimates the charges from the electrostatic potential, but with potential points that are Boltzmann-weighted after their occurrence in actual simulations using the energy function of the program in which the charges will be used, and CHELMO, which estimates the charges directly from the electrostatic multipole moments. Different criteria for the quality of the charges are discussed.</abstract>
+    <note type="annotation">An article entry with volume, number, and doi fields. Note that the doi is transformed into a clickable link if hyperref support has been enabled</note>
+    <identifier type="citekey">sigfridsson</identifier>
+    <identifier type="doi">10.1002/(SICI)1096-987X(199803)19:4&lt;377::AID-JCC1&gt;3.0.CO;2-P</identifier>
+    <part>
+        <detail type="volume"><number>19</number></detail>
+        <detail type="number"><number>4</number></detail>
+        <extent unit="page">
+            <start>377</start>
+            <end>395</end>
+        </extent>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: sigfridsson
+  type: article-journal
+  author:
+  - family: Sigfridsson
+    given: Emma
+  - family: Ryde
+    given: Ulf
+  issued:
+  - year: '1998'
+  title: Comparison of methods for deriving atomic charges from the electrostatic
+    potential and moments
+  container-title: Journal of Computational Chemistry
+  page: '377-395'
+  volume: '19'
+  issue: '4'
+  annote: An article entry with volume, number, and doi fields. Note that the <span
+    style="font-variant:small-caps;">doi</span> is transformed into a clickable link
+    if hyperref support has been enabled
+  abstract: 'Four methods for deriving partial atomic charges from the quantum chemical
+    electrostatic potential (CHELP, CHELPG, Merz-Kollman, and RESP) have been compared
+    and critically evaluated. It is shown that charges strongly depend on how and
+    where the potential points are selected. Two alternative methods are suggested
+    to avoid the arbitrariness in the point-selection schemes and van der Waals exclusion
+    radii: CHELP-BOW, which also estimates the charges from the electrostatic potential,
+    but with potential points that are Boltzmann-weighted after their occurrence in
+    actual simulations using the energy function of the program in which the charges
+    will be used, and CHELMO, which estimates the charges directly from the electrostatic
+    multipole moments. Different criteria for the quality of the charges are discussed.'
+  DOI: 10.1002/(SICI)1096-987X(199803)19:4<377::AID-JCC1>3.0.CO;2-P
+  language: en-US
+...
+

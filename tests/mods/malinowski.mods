@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="malinowski">
+    <titleInfo>
+        <title>Argonauts of the Western Pacific</title>
+        <subTitle>An account of native enterprise and adventure in the Archipelagoes of Melanesian New Guinea</subTitle>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Argonauts</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Bronisław</namePart>
+        <namePart type="family">Malinowski</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1972</dateIssued>
+        <publisher>Routledge and Kegan Paul</publisher>
+        <place>
+            <placeTerm type="text">London</placeTerm>
+        </place>
+        <edition>8</edition>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <note type="annotation">This is a book entry. Note the format of the publisher and edition fields as well as the subtitle field</note>
+    <identifier type="citekey">malinowski</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">british</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: malinowski
+  type: book
+  author:
+  - family: Malinowski
+    given: Bronisław
+  issued:
+  - year: '1972'
+  title: 'Argonauts of the Western Pacific: An account of native enterprise and
+    adventure in the <span class="nocase">Archipelagoes of Melanesian New Guinea</span>'
+  title-short: Argonauts
+  publisher: Routledge and Kegan Paul
+  publisher-place: London
+  edition: '8'
+  annote: This is a book entry. Note the format of the publisher and edition fields
+    as well as the subtitle field
+  language: en-GB
+...
+

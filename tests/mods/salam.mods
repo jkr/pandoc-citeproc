@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="salam">
+    <titleInfo>
+        <title>Weak and Electromagnetic Interactions</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Abdus</namePart>
+        <namePart type="family">Salam</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1968</dateIssued>
+        <place>
+            <placeTerm type="text">Aspenäsgarden, Lerum</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Elementary particle theory</title>
+            <subTitle>Relativistic groups and analyticity. Proceedings of the Eighth Nobel Symposium</subTitle>
+        </titleInfo>
+        <name type="personal">
+            <namePart type="given">Nils</namePart>
+            <namePart type="family">Svartholm</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+            </role>
+        </name>
+        <originInfo>
+            <publisher>Almquist &amp; Wiksell</publisher>
+            <place>
+                <placeTerm type="text">Stockholm</placeTerm>
+            </place>
+        </originInfo>
+        <genre authority="marcgt">conference publication</genre>
+    </relatedItem>
+    <identifier type="citekey">salam</identifier>
+    <part>
+        <extent unit="page">
+            <start>367</start>
+            <end>377</end>
+        </extent>
+    </part>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: salam
+  type: paper-conference
+  author:
+  - family: Salam
+    given: Abdus
+  editor:
+  - family: Svartholm
+    given: Nils
+  issued:
+  - year: '1968'
+  event-date:
+  - year: '1968'
+    month: '5'
+    day: '19'
+  - year: '1968'
+    month: '5'
+    day: '25'
+  title: Weak and electromagnetic interactions
+  container-title: 'Elementary particle theory: Relativistic groups and analyticity.
+    Proceedings of the eighth Nobel symposium'
+  publisher: Almquist & Wiksell
+  publisher-place: Stockholm
+  event-place: Aspenäsgarden, Lerum
+  page: '367-377'
+...
+

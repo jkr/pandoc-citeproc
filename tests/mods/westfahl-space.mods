@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
+</mods>
+<mods ID="westfahl:space">
+    <titleInfo>
+        <title>The True Frontier</title>
+        <subTitle>Confronting and Avoiding the Realities of Space in American Science Fiction Films The Frontier Theme in Science Fiction</subTitle>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Gary</namePart>
+        <namePart type="family">Westfahl</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>2000</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Space and Beyond</title>
+            <subTitle>The Frontier Theme in Science Fiction</subTitle>
+        </titleInfo>
+        <name type="personal">
+            <namePart type="given">Gary</namePart>
+            <namePart type="family">Westfahl</namePart>
+            <role>
+                <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+            </role>
+        </name>
+        <originInfo>
+            <publisher>Greenwood</publisher>
+            <place>
+                <placeTerm type="text">Westport, Conn. and London</placeTerm>
+            </place>
+        </originInfo>
+        <genre>collection</genre>
+    </relatedItem>
+    <note type="annotation">A cross-referenced article from a collection. This is an incollection entry with a crossref field. Note the subtitle and indextitle fields</note>
+    <note type="annotation">This is a collection entry. Note the format of the location field as well as the subtitle and booksubtitle fields</note>
+    <identifier type="citekey">westfahl:space</identifier>
+    <part>
+        <extent unit="page">
+            <start>55</start>
+            <end>65</end>
+        </extent>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+<mods ID="westfahl:frontier">
+    <titleInfo>
+        <title>Space and Beyond</title>
+        <subTitle>The Frontier Theme in Science Fiction</subTitle>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Gary</namePart>
+        <namePart type="family">Westfahl</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>2000</dateIssued>
+        <publisher>Greenwood</publisher>
+        <place>
+            <placeTerm type="text">Westport, Conn. and London</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <note type="annotation">This is a collection entry. Note the format of the location field as well as the subtitle and booksubtitle fields</note>
+    <identifier type="citekey">westfahl:frontier</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: westfahl:space
+  type: chapter
+  author:
+  - family: Westfahl
+    given: Gary
+  editor:
+  - family: Westfahl
+    given: Gary
+  issued:
+  - year: '2000'
+  title: 'The true frontier: Confronting and avoiding the realities of space in
+    American science fiction films'
+  title-short: The true frontier
+  container-title: 'Space and beyond: The frontier theme in science fiction'
+  publisher: Greenwood
+  publisher-place: Westport, Conn.; London
+  page: '55-65'
+  annote: A cross-referenced article from a collection. This is an incollection entry
+    with a crossref field. Note the subtitle and indextitle fields
+  language: en-US
+
+- id: westfahl:frontier
+  type: book
+  editor:
+  - family: Westfahl
+    given: Gary
+  issued:
+  - year: '2000'
+  title: 'Space and beyond: The frontier theme in science fiction'
+  title-short: Space and beyond
+  publisher: Greenwood
+  publisher-place: Westport, Conn.; London
+  annote: This is a collection entry. Note the format of the location field as well
+    as the subtitle and booksubtitle fields
+  language: en-US
+...
+

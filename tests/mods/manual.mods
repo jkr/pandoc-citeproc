@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="adaptedfromhttp://mirrors.ctan.org/macros/latex/contrib/biblatex/doc/examples/biblatex-examples.bib">
+    <titleInfo>
+        <title/>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">adapted from http://mirrors.ctan.org/macros/latex/contrib/biblatex/doc/examples/biblatex-examples.bib</identifier>
+</mods>
+<mods ID="cms">
+    <titleInfo>
+        <title>The Chicago Manual of Style</title>
+        <subTitle>The Essential Guide for Writers, Editors, and Publishers</subTitle>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Chicago Manual of Style</title>
+    </titleInfo>
+    <originInfo>
+        <dateIssued>2003</dateIssued>
+        <publisher>University of Chicago Press</publisher>
+        <place>
+            <placeTerm type="text">Chicago, Ill.</placeTerm>
+        </place>
+        <edition>15</edition>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">instruction</genre>
+    <note type="annotation">This is a manual entry without an author or editor. Note the label field in the database file which is provided for author-year citation styles. Also note the sorttitle and indextitle fields. By default, all entries without an author or editor are alphabetized by title but we want this entry to be alphabetized under \enquote*C rather than \enquote*T. There’s also an isbn field</note>
+    <identifier type="isbn">0-226-10403-6</identifier>
+    <identifier type="citekey">cms</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: cms
+  type: book
+  issued:
+  - year: '2003'
+  title: 'The Chicago manual of style: The essential guide for writers, editors,
+    and publishers'
+  title-short: Chicago manual of style
+  publisher: University of Chicago Press
+  publisher-place: Chicago, Ill.
+  edition: '15'
+  annote: This is a manual entry without an author or editor. Note the label field
+    in the database file which is provided for author-year citation styles. Also note
+    the sorttitle and indextitle fields. By default, all entries without an author
+    or editor are alphabetized by title but we want this entry to be alphabetized
+    under “C” rather than “T”. There’s also an isbn field
+  ISBN: '0-226-10403-6'
+  language: en-US
+...
+
