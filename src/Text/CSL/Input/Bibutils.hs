@@ -24,6 +24,7 @@ import Data.Char
 import System.FilePath ( takeExtension )
 import Text.CSL.Reference hiding ( Value )
 import Text.CSL.Input.Bibtex
+import Text.CSL.Input.MODS
 import qualified Data.ByteString.Lazy as BL
 import qualified Data.Map as M
 import Data.Aeson
@@ -51,8 +52,8 @@ readBiblioFile f
         ".bib"      -> readBibtex False True f
         ".bibtex"   -> readBibtex True True f
         ".biblatex" -> readBibtex False True f
+        ".mods"     -> readModsFile f
 #ifdef USE_BIBUTILS
-        ".mods"     -> readBiblioFile' f mods_in
         ".ris"      -> readBiblioFile' f ris_in
         ".enl"      -> readBiblioFile' f endnote_in
         ".xml"      -> readBiblioFile' f endnotexml_in
@@ -70,6 +71,7 @@ data BibFormat
     | Yaml
     | Bibtex
     | BibLatex
+    | Mods
 #ifdef USE_BIBUTILS
     | Ris
     | Endnote
@@ -77,7 +79,6 @@ data BibFormat
     | Isi
     | Medline
     | Copac
-    | Mods
 #endif
 
 readBiblioString :: BibFormat -> String -> IO [Reference]
@@ -86,6 +87,7 @@ readBiblioString b s
     | Yaml      <- b = either error return $ readYamlBib s
     | Bibtex    <- b = readBibtexString True True s
     | BibLatex  <- b = readBibtexString False True s
+    | Mods      <- b = return $ readModsString s
 #ifdef USE_BIBUTILS
     | Ris       <- b = go ris_in
     | Endnote   <- b = go endnote_in
@@ -93,7 +95,6 @@ readBiblioString b s
     | Isi       <- b = go isi_in
     | Medline   <- b = go medline_in
     | Copac     <- b = go copac_in
-    | Mods      <- b = go mods_in
 #endif
     | otherwise      = error "in readBiblioString"
 #ifdef USE_BIBUTILS
