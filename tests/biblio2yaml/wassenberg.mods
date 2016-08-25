@@ -2,7 +2,7 @@
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
 <mods ID="wassenberg">
     <titleInfo>
-        <title>Faster Radix Sort via Virtual Memory and Write-Combining</title>
+        <title>Faster radix sort via virtual memory and write-combining</title>
     </titleInfo>
     <name type="personal">
         <namePart type="given">Jan</namePart>
@@ -24,6 +24,13 @@
     </originInfo>
     <typeOfResource>software, multimedia</typeOfResource>
     <genre>web page</genre>
+    <abstract>Sorting algorithms are the deciding factor for the performance
+    of common operations such as removal of duplicates or database
+    sort-merge joins. This work focuses on 32-bit integer keys,
+    optionally paired with a 32-bit value. We present a fast radix
+    sorting algorithm that builds upon a microarchitecture-aware
+    variant of counting sort.</abstract>
+
     <note type="annotation">A recent online reference from arXiv using the new (April 2007 onward) identifier format. Note the eprint, eprinttype, and eprintclass fields. Also note that the arXiv reference is transformed into a clickable link if hyperref support has been enabled</note>
     <identifier type="citekey">wassenberg</identifier>
     <identifier type="arXiv">1008.2849v1</identifier>
@@ -59,7 +66,6 @@ references:
     operations such as removal of duplicates or database sort-merge joins. This work
     focuses on 32-bit integer keys, optionally paired with a 32-bit value. We present
     a fast radix sorting algorithm that builds upon a microarchitecture-aware variant
-    of counting sort
-  URL: http://arxiv.org/abs/1008.2849v1
+    of counting sort.
   language: en-US
 ...
