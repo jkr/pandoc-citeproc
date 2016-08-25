@@ -837,10 +837,10 @@ withHostInfo hostModsRef childModsRef =
           if childRefType == Chapter && hostGenre /= "collection"
           then ""
           else title hostRef
-      , containerTitleShort =
-          if childRefType == Chapter && hostGenre /= "collection"
-          then ""
-          else titleShort hostRef
+      -- , containerTitleShort =
+      --     if childRefType == Chapter && hostGenre /= "collection"
+      --     then ""
+      --     else titleShort hostRef
       , chapterNumber =
           if childRefType == Chapter && hostGenre /= "collection"
           then title childRef
@@ -945,7 +945,7 @@ modsRefToReference' modsRef =
                                 concatMap origPublisher $ 
                                 modsOriginInfo modsRef
                   , publisherPlace = fromText $
-                                     listToMonoid $
+                                     T.intercalate "; " $
                                      concatMap origPlace $ 
                                      modsOriginInfo modsRef
                   , edition = fromText $
