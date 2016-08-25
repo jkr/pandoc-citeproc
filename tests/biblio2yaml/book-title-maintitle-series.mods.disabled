@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
 <mods ID="item1">
     <titleInfo>
-        <title>Title of the Book</title>
+        <title>Title of the book</title>
         <subTitle>Subtitle. Titleaddon</subTitle>
     </titleInfo>
     <name type="personal">
