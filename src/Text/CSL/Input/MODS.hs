@@ -819,13 +819,22 @@ replaceIfNonEmpty f hostRef ref =
   then f hostRef
   else f ref
 
+isStandAlone :: Reference -> Bool
+isStandAlone ref = publisher ref /= mempty
+
 withHostInfo :: ModsReference -> ModsReference -> Reference
 withHostInfo hostModsRef childModsRef =
   let childRef = modsRefToReference' childModsRef
       childRefType = getChildRefType hostModsRef childModsRef
       hostRef = modsRefToReference' hostModsRef
       hostGenre = listToMonoid $ modsGenre hostModsRef
+      containerToCollection ref =
+        if isStandAlone childRef
+        then ref { collectionTitle = containerTitle ref
+                 , containerTitle = mempty }
+        else ref
   in
+    containerToCollection $ 
     childRef { containerAuthor = author hostRef
       , title = if childRefType == Chapter && hostGenre /= "collection"
                 then title hostRef
