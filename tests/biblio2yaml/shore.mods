@@ -61,4 +61,3 @@ references:
   annote: An article entry with series, volume, and number fields. Note the format
     of the series which is a localization key
 ...
-
