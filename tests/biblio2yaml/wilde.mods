@@ -2,7 +2,7 @@
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
 <mods ID="wilde">
     <titleInfo>
-        <title>The Importance of Being Earnest: A Trivial Comedy for Serious People</title>
+        <title>The importance of being Earnest: A trivial comedy for serious people</title>
     </titleInfo>
     <name type="personal">
         <namePart type="given">Oscar</namePart>
@@ -20,7 +20,7 @@
     <genre authority="marcgt">book</genre>
     <relatedItem type="host">
         <titleInfo>
-            <title>English and American drama of the Nineteenth Century</title>
+            <title>English and American drama of the nineteenth century</title>
         </titleInfo>
     </relatedItem>
     <note type="annotation">A book with eprint and eprinttype fields.</note>
@@ -40,11 +40,10 @@ references:
     given: Oscar
   issued:
   - year: '1899'
-  title: 'The importance of being earnest: A trivial comedy for serious people'
-  title-short: The importance of being earnest
-  collection-title: English and american drama of the nineteenth century
+  title: 'The importance of being Earnest: A trivial comedy for serious people'
+  title-short: The importance of being Earnest
+  collection-title: English and American drama of the nineteenth century
   publisher: Leonard Smithers and Company
   annote: A book with eprint and eprinttype fields.
   URL: http://books.google.com?id=4HIWAAAAYAAJ
 ...
-
