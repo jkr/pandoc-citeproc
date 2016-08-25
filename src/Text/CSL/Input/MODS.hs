@@ -12,7 +12,6 @@ import Text.CSL.Reference (Reference(..), RefType(..), RefDate(..),
                            Literal(..), emptyReference, parseDate)
 import Text.CSL.Style (Formatted(..), Agent(..), emptyAgent)
 import Text.CSL.Util (toLocale)
-import Text.CSL.Input.Bibtex (toAuthor)
 import qualified Text.Pandoc.Definition as P
 import Data.Text (Text)
 import qualified Data.Text as T
