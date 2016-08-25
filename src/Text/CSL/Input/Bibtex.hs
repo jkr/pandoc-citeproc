@@ -15,7 +15,6 @@ module Text.CSL.Input.Bibtex
     ( readBibtex
     , readBibtexString
     , readBibtexString'
-    , toAuthor
     )
     where
 
@@ -31,7 +30,7 @@ import Control.Monad.RWS
 import System.Environment (getEnvironment)
 import Text.CSL.Reference
 import Text.CSL.Style (Formatted(..), Locale(..), CslTerm(..), Agent(..))
-import Text.CSL.Util (trim, onBlocks, unTitlecase, protectCase, splitStrWhen, toLocale)
+import Text.CSL.Util (trim, onBlocks, unTitlecase, protectCase, splitStrWhen)
 import Text.CSL.Parser (parseLocale)
 import qualified Text.Pandoc.Walk as Walk
 import qualified Text.Pandoc.UTF8 as UTF8
@@ -975,12 +974,12 @@ toLiteralList _ = mzero
 
 toAuthorList :: Options -> [Block] -> Bib [Agent]
 toAuthorList opts [Para xs] =
-  mapM (return . (toAuthor opts)) $ splitByAnd xs
+  mapM (toAuthor opts) $ splitByAnd xs
 toAuthorList opts [Plain xs] = toAuthorList opts [Para xs]
 toAuthorList _ _ = mzero
 
-toAuthor :: Options -> [Inline] -> Agent
-toAuthor _ [Str "others"] = 
+toAuthor :: Options -> [Inline] -> Bib Agent
+toAuthor _ [Str "others"] = return $
     Agent { givenName       = []
           , droppingPart    = mempty
           , nonDroppingPart = mempty
@@ -991,6 +990,7 @@ toAuthor _ [Str "others"] =
           , parseNames      = False
           }
 toAuthor _ [Span ("",[],[]) ils] =
+  return $ -- corporate author
     Agent { givenName       = []
           , droppingPart    = mempty
           , nonDroppingPart = mempty
@@ -1009,14 +1009,14 @@ toAuthor _ [Span ("",[],[]) ils] =
 -- biblatex takes the whole as a last name.
 -- See https://github.com/plk/biblatex/issues/236
 -- Here we implement the more sensible biblatex behavior.
-toAuthor opts ils =
+toAuthor opts ils = do
   let useprefix = optionSet "useprefix" opts
-      usecomma  = optionSet "juniorcomma" opts
-      bibtex    = optionSet "bibtex" opts
-      words' = wordsBy (\x -> x == Space || x == Str "\160")
-      commaParts = map words' $ splitWhen (== Str ",")
+  let usecomma  = optionSet "juniorcomma" opts
+  let bibtex    = optionSet "bibtex" opts
+  let words' = wordsBy (\x -> x == Space || x == Str "\160")
+  let commaParts = map words' $ splitWhen (== Str ",")
                               $ splitStrWhen (\c -> c == ',' || c == '\160') ils
-      (first, vonlast, jr) =
+  let (first, vonlast, jr) =
           case commaParts of
                --- First is the longest sequence of white-space separated
                -- words starting with an uppercase and that is not the
@@ -1031,7 +1031,7 @@ toAuthor opts ils =
                (vl:j:f:_) -> (f, vl, j )
                []         -> ([], [], [])
 
-      (von, lastname) =
+  let (von, lastname) =
          if bibtex
             then case span isCapitalized $ reverse vonlast of
                         ([],(w:ws))    -> (reverse ws, [w])
@@ -1039,11 +1039,11 @@ toAuthor opts ils =
             else case span (not . isCapitalized) vonlast of
                         (vs@(_:_), []) -> (init vs, [last vs])
                         (vs, ws)       -> (vs, ws)
-      prefix = Formatted $ intercalate [Space] von
-      family = Formatted $ intercalate [Space] lastname
-      suffix = Formatted $ intercalate [Space] jr
-      givens = map Formatted first
-  in
+  let prefix = Formatted $ intercalate [Space] von
+  let family = Formatted $ intercalate [Space] lastname
+  let suffix = Formatted $ intercalate [Space] jr
+  let givens = map Formatted first
+  return $
     Agent { givenName       = givens
           , droppingPart    = if useprefix then mempty else prefix
           , nonDroppingPart = if useprefix then prefix else mempty
@@ -1053,7 +1053,6 @@ toAuthor opts ils =
           , commaSuffix     = usecomma
           , parseNames      = False
           }
-    
 
 isCapitalized :: [Inline] -> Bool
 isCapitalized (Str (c:cs) : rest)
@@ -1098,6 +1097,69 @@ latexAuthors opts = toAuthorList opts . latex' . trim
 
 bib :: Bib Reference -> Item -> Maybe Reference
 bib m entry = fmap fst $ evalRWST m entry (BibState True (Lang "en" "US"))
+
+toLocale :: String -> String
+toLocale "english"    = "en-US" -- "en-EN" unavailable in CSL
+toLocale "usenglish"  = "en-US"
+toLocale "american"   = "en-US"
+toLocale "british"    = "en-GB"
+toLocale "ukenglish"  = "en-GB"
+toLocale "canadian"   = "en-US" -- "en-CA" unavailable in CSL
+toLocale "australian" = "en-GB" -- "en-AU" unavailable in CSL
+toLocale "newzealand" = "en-GB" -- "en-NZ" unavailable in CSL
+toLocale "afrikaans"  = "af-ZA"
+toLocale "arabic"     = "ar"
+toLocale "basque"     = "eu"
+toLocale "bulgarian"  = "bg-BG"
+toLocale "catalan"    = "ca-AD"
+toLocale "croatian"   = "hr-HR"
+toLocale "czech"      = "cs-CZ"
+toLocale "danish"     = "da-DK"
+toLocale "dutch"      = "nl-NL"
+toLocale "estonian"   = "et-EE"
+toLocale "finnish"    = "fi-FI"
+toLocale "canadien"   = "fr-CA"
+toLocale "acadian"    = "fr-CA"
+toLocale "french"     = "fr-FR"
+toLocale "francais"   = "fr-FR"
+toLocale "austrian"   = "de-AT"
+toLocale "naustrian"  = "de-AT"
+toLocale "german"     = "de-DE"
+toLocale "germanb"    = "de-DE"
+toLocale "ngerman"    = "de-DE"
+toLocale "greek"      = "el-GR"
+toLocale "polutonikogreek" = "el-GR"
+toLocale "hebrew"     = "he-IL"
+toLocale "hungarian"  = "hu-HU"
+toLocale "icelandic"  = "is-IS"
+toLocale "italian"    = "it-IT"
+toLocale "japanese"   = "ja-JP"
+toLocale "latvian"    = "lv-LV"
+toLocale "lithuanian" = "lt-LT"
+toLocale "magyar"     = "hu-HU"
+toLocale "mongolian"  = "mn-MN"
+toLocale "norsk"      = "nb-NO"
+toLocale "nynorsk"    = "nn-NO"
+toLocale "farsi"      = "fa-IR"
+toLocale "polish"     = "pl-PL"
+toLocale "brazil"     = "pt-BR"
+toLocale "brazilian"  = "pt-BR"
+toLocale "portugues"  = "pt-PT"
+toLocale "portuguese" = "pt-PT"
+toLocale "romanian"   = "ro-RO"
+toLocale "russian"    = "ru-RU"
+toLocale "serbian"    = "sr-RS"
+toLocale "serbianc"   = "sr-RS"
+toLocale "slovak"     = "sk-SK"
+toLocale "slovene"    = "sl-SL"
+toLocale "spanish"    = "es-ES"
+toLocale "swedish"    = "sv-SE"
+toLocale "thai"       = "th-TH"
+toLocale "turkish"    = "tr-TR"
+toLocale "ukrainian"  = "uk-UA"
+toLocale "vietnamese" = "vi-VN"
+toLocale "latin"      = "la"
+toLocale x            = x
 
 concatWith :: Char -> [Formatted] -> Formatted
 concatWith sep = Formatted . foldl go mempty . map unFormatted
