@@ -32,12 +32,15 @@ main = do
   testnames <- fmap (map (dropExtension . takeBaseName) .
                      filter (".in.native" `isSuffixOf`)) $
                getDirectoryContents "tests"
-  citeprocTests <- mapM (testCase regenerate) testnames
+  -- citeprocTests <- mapM (testCase regenerate) testnames
+  citeprocTests <- mapM (testCase regenerate) []
   fs <- filter (\f -> takeExtension f `elem` [".bibtex",".biblatex"])
            `fmap` getDirectoryContents "tests/biblio2yaml"
   fs' <- filter (\f -> takeExtension f == ".mods")
            `fmap` getDirectoryContents "tests/biblio2yaml"
-  biblio2yamlTests <- mapM biblio2yamlTest $ fs ++ fs'
+  -- biblio2yamlTests <- mapM biblio2yamlTest $ fs ++ fs'
+  -- let allTests = citeprocTests ++ biblio2yamlTests
+  biblio2yamlTests <- mapM biblio2yamlTest $ reverse $ take 4 $ reverse fs'
   let allTests = citeprocTests ++ biblio2yamlTests
   let numpasses  = length $ filter (== Passed) allTests
   let numskipped = length $ filter (== Skipped) allTests
