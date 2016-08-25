@@ -17,7 +17,7 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import Data.Maybe (mapMaybe, listToMaybe)
 import qualified Data.Map as M
-import Data.Char (isDigit, isSpace, toUpper)
+import Data.Char (isSpace, toUpper)
 import Data.Monoid ((<>))
 import Data.List (nub)
 import qualified Text.Pandoc.UTF8 as UTF8
@@ -263,7 +263,6 @@ subjCursorToSubject subjCurs =
     Subject { subjTopic = topics
             , subjGeographic = geographic
             }
-
 
 -- toRefDate :: Text -> RefDate
 -- toRefDate txt
