@@ -2,8 +2,8 @@
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
 <mods ID="westfahl:space">
     <titleInfo>
-        <title>The True Frontier</title>
-        <subTitle>Confronting and Avoiding the Realities of Space in American Science Fiction Films The Frontier Theme in Science Fiction</subTitle>
+        <title>The true frontier</title>
+        <subTitle>Confronting and avoiding the realities of space in American science fiction films</subTitle>
     </titleInfo>
     <name type="personal">
         <namePart type="given">Gary</namePart>
@@ -19,8 +19,8 @@
     <typeOfResource>text</typeOfResource>
     <relatedItem type="host">
         <titleInfo>
-            <title>Space and Beyond</title>
-            <subTitle>The Frontier Theme in Science Fiction</subTitle>
+            <title>Space and beyond</title>
+            <subTitle>The frontier theme in science fiction</subTitle>
         </titleInfo>
         <name type="personal">
             <namePart type="given">Gary</namePart>
@@ -32,7 +32,8 @@
         <originInfo>
             <publisher>Greenwood</publisher>
             <place>
-                <placeTerm type="text">Westport, Conn. and London</placeTerm>
+              <placeTerm type="text">Westport, Conn.</placeTerm>
+	      <placeTerm type="text">London</placeTerm>
             </place>
         </originInfo>
         <genre>collection</genre>
@@ -54,7 +55,7 @@
 </mods>
 <mods ID="gaonkar:in">
     <titleInfo>
-        <title>On Alternative Modernities</title>
+        <title>On alternative modernities</title>
     </titleInfo>
     <name type="personal">
         <namePart type="given">Dilip</namePart>
@@ -71,7 +72,7 @@
     <typeOfResource>text</typeOfResource>
     <relatedItem type="host">
         <titleInfo>
-            <title>Alternative Modernities</title>
+            <title>Alternative modernities</title>
         </titleInfo>
         <name type="personal">
             <namePart type="given">Dilip</namePart>
@@ -84,7 +85,8 @@
         <originInfo>
             <publisher>Duke University Press</publisher>
             <place>
-                <placeTerm type="text">Durham and London</placeTerm>
+              <placeTerm type="text">Durham</placeTerm>
+	      <placeTerm type="text">London</placeTerm>
             </place>
         </originInfo>
         <genre>collection</genre>
@@ -100,8 +102,8 @@
 </mods>
 <mods ID="westfahl:frontier">
     <titleInfo>
-        <title>Space and Beyond</title>
-        <subTitle>The Frontier Theme in Science Fiction</subTitle>
+        <title>Space and beyond</title>
+        <subTitle>The frontier theme in science fiction</subTitle>
     </titleInfo>
     <name type="personal">
         <namePart type="given">Gary</namePart>
@@ -115,7 +117,8 @@
         <dateIssued>2000</dateIssued>
         <publisher>Greenwood</publisher>
         <place>
-            <placeTerm type="text">Westport, Conn. and London</placeTerm>
+          <placeTerm type="text">Westport, Conn.</placeTerm>
+	  <placeTerm type="text">London</placeTerm>
         </place>
     </originInfo>
     <typeOfResource>text</typeOfResource>
