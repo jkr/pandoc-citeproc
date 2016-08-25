@@ -1,22 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
-<mods ID="excerptfromhttp://mirrors.ctan.org/macros/latex/contrib/biblatex/doc/examples/biblatex-examples.bibTODO:Wheretomap&quot;file&quot;field?">
-    <titleInfo>
-        <title/>
-    </titleInfo>
-    <typeOfResource>text</typeOfResource>
-    <genre>journal article</genre>
-    <relatedItem type="host">
-        <titleInfo>
-            <title/>
-        </titleInfo>
-        <originInfo>
-            <issuance>continuing</issuance>
-        </originInfo>
-        <genre authority="marcgt">periodical</genre>
-    </relatedItem>
-    <identifier type="citekey">excerpt from http://mirrors.ctan.org/macros/latex/contrib/biblatex/doc/examples/biblatex-examples.bib TODO: Where to map &quot;file&quot; field? </identifier>
-</mods>
 <mods ID="chiu">
     <titleInfo>
         <title>A Hybrid Hierarchical Model of a Multiple Virtual Storage (MVS) Operating System</title>

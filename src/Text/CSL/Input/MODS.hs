@@ -16,7 +16,7 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import Data.Maybe (mapMaybe, listToMaybe)
 import qualified Data.Map as M
-import Data.Char (isDigit, isSpace)
+import Data.Char (isDigit, isSpace, toUpper)
 import Data.Monoid ((<>))
 import Data.List (nub)
 import qualified Text.Pandoc.UTF8 as UTF8
@@ -452,6 +452,17 @@ textToRefType txt = case T.toLower txt of
   "treaty"   -> Treaty
   "web page" -> Webpage
   _ -> Book
+
+capitalize :: Text -> Text
+capitalize txt = case T.uncons txt of
+  Just (c, txt') -> toUpper c `T.cons` txt'
+  Nothing        -> txt
+
+splitTitle :: Text -> (Text, Text)
+splitTitle ti
+  | (ti', st) <- T.break (':' ==) ti
+  , Just st' <- T.strip <$> T.stripPrefix ": " st = (ti', st')
+  | otherwise = (ti, mempty)
   
 tiCursToTitleInfo :: Cursor -> TitleInfo
 tiCursToTitleInfo ti =
@@ -463,9 +474,17 @@ tiCursToTitleInfo ti =
                      element (X.Name "subTitle" (Just modsNS) Nothing) >>=
                      descendant >>=
                      content
-  in TitleInfo { titleInfoTitle = titleText
-               , titleInfoSubTitle = subTitleText}
 
+  in
+    case subTitleText of
+      [] -> TitleInfo { titleInfoTitle = map fst splits
+                      , titleInfoSubTitle = map snd splits
+                      }
+        where splits = map splitTitle titleText
+      _  -> TitleInfo { titleInfoTitle = titleText
+                      , titleInfoSubTitle = subTitleText
+                      }
+         
 recInfoCursorToRecInfo :: Cursor -> RecordInfo
 recInfoCursorToRecInfo curs =
   let ident = child curs >>=
@@ -601,7 +620,7 @@ tiToFullTitle ti =
     then mempty
     else if st == mempty
          then t
-         else t <> ": " <> st
+         else t <> ": " <> capitalize st
 
 tiToShortTitle :: TitleInfo -> Text
 tiToShortTitle ti =

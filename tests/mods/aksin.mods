@@ -1,22 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
-<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
-    <titleInfo>
-        <title/>
-    </titleInfo>
-    <typeOfResource>text</typeOfResource>
-    <genre>journal article</genre>
-    <relatedItem type="host">
-        <titleInfo>
-            <title/>
-        </titleInfo>
-        <originInfo>
-            <issuance>continuing</issuance>
-        </originInfo>
-        <genre authority="marcgt">periodical</genre>
-    </relatedItem>
-    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
-</mods>
 <mods ID="aksin">
     <titleInfo>
         <title>Effect of immobilization on catalytic characteristics of saturated Pd-N-heterocyclic carbenes in Mizoroki-Heck reactions</title>

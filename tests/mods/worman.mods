@@ -2,8 +2,8 @@
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
 <mods ID="worman">
     <titleInfo>
-        <title>The Cast of Character</title>
-        <subTitle>Style in Greek Literature</subTitle>
+        <title>The cast of character</title>
+        <subTitle>Style in Greek literature</subTitle>
     </titleInfo>
     <titleInfo type="abbreviated">
         <title>Cast of Character</title>
@@ -49,7 +49,7 @@ references:
   title-short: Cast of character
   publisher: University of Texas Press
   publisher-place: Austin
-  annote: A book entry. Note the sorttitle and indextitle fields
+  note: A book entry. Note the sorttitle and indextitle fields
   language: en-US
 ...
 

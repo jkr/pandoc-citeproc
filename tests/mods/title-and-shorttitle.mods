@@ -1,22 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
-<mods ID="TODO:Slightinconsistency:Whenabiblatex“title”fieldcontainsacolon">
-    <titleInfo>
-        <title/>
-    </titleInfo>
-    <typeOfResource>text</typeOfResource>
-    <genre>journal article</genre>
-    <relatedItem type="host">
-        <titleInfo>
-            <title/>
-        </titleInfo>
-        <originInfo>
-            <issuance>continuing</issuance>
-        </originInfo>
-        <genre authority="marcgt">periodical</genre>
-    </relatedItem>
-    <identifier type="citekey">TODO: Slight inconsistency: When a biblatex “title” field contains a colon</identifier>
-</mods>
 <mods ID="item4">
     <titleInfo>
         <title>The Title: With a Colon in the “Title” Field</title>

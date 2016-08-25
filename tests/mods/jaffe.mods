@@ -1,27 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
-<mods ID="Adaptedfrombiblatex-example.bibFormattedwithpandocandchicago-author-date.csl">
-    <titleInfo>
-        <title/>
-    </titleInfo>
-    <typeOfResource>text</typeOfResource>
-    <genre>journal article</genre>
-    <relatedItem type="host">
-        <titleInfo>
-            <title/>
-        </titleInfo>
-        <originInfo>
-            <issuance>continuing</issuance>
-        </originInfo>
-        <genre authority="marcgt">periodical</genre>
-    </relatedItem>
-    <identifier type="citekey">Adapted from biblatex-example.bib Formatted with pandoc and chicago-author-date.csl</identifier>
-    <recordInfo>
-        <languageOfCataloging>
-            <languageTerm type="text">latin-citeproc:-vols.ismissing-worksinZotero-Thisdoesnotshowupinthetestsfromtheciteproctestsuitethatcurrentlyfail.-\&lt;span ...\&gt; needs to be fixed. - maybe add markdown syntax ^^small caps^^ ? - in pandoc plain&quot; output, small caps could be converted to uppercase chars: &quot;MCXCVIII&quot; would definitely look better here. </languageTerm>
-        </languageOfCataloging>
-    </recordInfo>
-</mods>
 <mods ID="jaffe">
     <titleInfo>
         <title>Regesta Pontificum Romanorum ab condita ecclesia ad annum post Christum natum mcxcviii</title>

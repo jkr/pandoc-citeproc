@@ -6,7 +6,7 @@
     </titleInfo>
     <name type="personal">
         <namePart type="given">Myeong</namePart>
-        <namePart type="given">S</namePart>
+        <namePart type="given">S.</namePart>
         <namePart type="family">Yoon</namePart>
         <role>
             <roleTerm authority="marcrelator" type="text">author</roleTerm>
@@ -84,4 +84,3 @@ references:
   volume: '25'
   issue: '10'
 ...
-

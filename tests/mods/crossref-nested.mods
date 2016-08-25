@@ -1,22 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
-<mods ID="Nestedcrossreferences(seebibermanualv1.7)">
-    <titleInfo>
-        <title/>
-    </titleInfo>
-    <typeOfResource>text</typeOfResource>
-    <genre>journal article</genre>
-    <relatedItem type="host">
-        <titleInfo>
-            <title/>
-        </titleInfo>
-        <originInfo>
-            <issuance>continuing</issuance>
-        </originInfo>
-        <genre authority="marcgt">periodical</genre>
-    </relatedItem>
-    <identifier type="citekey">Nested crossreferences (see biber manual v 1.7) </identifier>
-</mods>
 <mods ID="bookinbook-1">
     <titleInfo>
         <title>Macbeth [title field of bookinbook-1] Tragedies [title field of book-1]</title>
