@@ -106,8 +106,10 @@ newtype Language = Language { fromLanguage :: Text }
 newtype Abstract = Abstract { fromAbstract :: Text }
   deriving (Show, Eq, Monoid)
 
-newtype Note = Note { fromNote :: Text }
-  deriving (Show, Eq, Monoid)
+-- We can expand this as need be.
+data Note = AnyNote Text
+          | Annotation Text
+          deriving (Show, Eq)
 
 --  Using a data instead of a newtype here because we might want to
 --  add more fields. I'm skipping them now because bibutils seems to.
@@ -526,7 +528,14 @@ locationCursorToLocation curs =
   in
     Location {locUrl = url' }
 
-
+noteCursorToNote :: Cursor -> Note
+noteCursorToNote curs =
+  let attr = listToMonoid $ attribute (X.Name "type" Nothing Nothing) curs
+      cont = listToMonoid $ descendant curs >>= content
+  in
+    case T.toLower attr of
+      "annotation" -> Annotation cont
+      _            -> AnyNote cont
 
 modsCursToModsReference :: Cursor -> ModsReference
 modsCursToModsReference modsCurs =
@@ -559,11 +568,9 @@ modsCursToModsReference modsCurs =
         content >>=
         (\t -> [Abstract t])
 
-      note' = child modsCurs >>=
-        element (X.Name "note" (Just modsNS) Nothing) >>=
-        descendant >>=
-        content >>=
-        (\t -> [Note t])
+      note' = map noteCursorToNote $ 
+        child modsCurs >>=
+        element (X.Name "note" (Just modsNS) Nothing)
 
       subj = map subjCursorToSubject $
         child modsCurs >>=
@@ -914,8 +921,17 @@ modsRefToReference' modsRef =
                                modsAbstract modsRef
                   , note = fromText $
                            listToMonoid $
-                           map fromNote $
-                           modsNote modsRef
+                           modsNote modsRef >>=
+                           (\n -> case n of
+                                    AnyNote txt -> [txt]
+                                    _ -> [])
+                  , annote = fromText $
+                             listToMonoid $
+                             modsNote modsRef >>=
+                             (\n -> case n of
+                                      Annotation txt -> [txt]
+                                      _ -> [])
+
                   , keyword = fromText $
                               T.intercalate "; " $
                               subjectsToSubjText $
