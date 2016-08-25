@@ -15,6 +15,7 @@ module Text.CSL.Input.Bibtex
     ( readBibtex
     , readBibtexString
     , readBibtexString'
+    , toAuthor
     )
     where
 
