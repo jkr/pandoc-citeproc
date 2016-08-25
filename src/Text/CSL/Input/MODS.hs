@@ -1201,10 +1201,13 @@ getId modsRef | x <- modsID modsRef
 
 -- If a name has several roles, we split it into one role per name.
 individuateNames :: [Name] -> [Name]
-individuateNames names = concatMap f names
-  where f name = if null $ nRoles name
-                 then map (\r -> Name (nName name) [r]) [Author]
-                 else map (\r -> Name (nName name) [r]) (nRoles name)
+individuateNames names = defaultToAuthor $ concatMap f names
+  where
+    f name = map (\r -> Name (nName name) [r]) (nRoles name)
+    defaultToAuthor nms =
+          if all (null . nRoles) names
+          then map (\n -> n {nRoles = [Author]}) nms
+          else nms
 
 getAgentsByRole :: Role -> [Name] -> [Agent]
 getAgentsByRole role names =
