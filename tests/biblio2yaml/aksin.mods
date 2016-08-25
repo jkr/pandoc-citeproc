@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="aksin">
+    <titleInfo>
+        <title>Effect of immobilization on catalytic characteristics of saturated Pd-N-heterocyclic carbenes in Mizoroki-Heck reactions</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Özge</namePart>
+        <namePart type="family">Aksın</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Hayati</namePart>
+        <namePart type="family">Türkmen</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Levent</namePart>
+        <namePart type="family">Artok</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Bekir</namePart>
+        <namePart type="family">Çetinkaya</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Chaoying</namePart>
+        <namePart type="family">Ni</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Orhan</namePart>
+        <namePart type="family">Büyükgüngör</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Erhan</namePart>
+        <namePart type="family">Özkal</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>2006</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>J. Organomet. Chem.</title>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">aksin</identifier>
+    <part>
+        <detail type="volume"><number>691</number></detail>
+        <detail type="number"><number>13</number></detail>
+        <extent unit="page">
+            <start>3027</start>
+            <end>3036</end>
+        </extent>
+    </part>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: aksin
+  type: article-journal
+  author:
+  - family: Aksin
+    given: Özge
+  - family: Türkmen
+    given: Hayati
+  - family: Artok
+    given: Levent
+  - family: Çetinkaya
+    given: Bekir
+  - family: Ni
+    given: Chaoying
+  - family: Büyükgüngör
+    given: Orhan
+  - family: Özkal
+    given: Erhan
+  issued:
+  - year: '2006'
+  title: Effect of immobilization on catalytic characteristics of saturated Pd-N-heterocyclic
+    carbenes in Mizoroki-Heck reactions
+  container-title: J. Organomet. Chem.
+  page: '3027-3036'
+  volume: '691'
+  issue: '13'
+...
+

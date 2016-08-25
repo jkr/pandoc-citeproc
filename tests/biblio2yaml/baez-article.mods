@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="baez-article">
+    <titleInfo>
+        <title>Higher-Dimensional Algebra V: 2-Groups</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">John</namePart>
+        <namePart type="given">C</namePart>
+        <namePart type="family">Baez</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Aaron</namePart>
+        <namePart type="given">D</namePart>
+        <namePart type="family">Lauda</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>2004</dateIssued>
+        <edition>3</edition>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Theory and Applications of Categories</title>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <note type="annotation">An article with eprint and eprinttype fields. Note that the arXiv reference is transformed into a clickable link if hyperref support has been enabled. Compare baez\slash online, which is the same item given as an online entry</note>
+    <identifier type="citekey">baez-article</identifier>
+    <identifier type="arXiv">math/0307200v3</identifier>
+    <part>
+        <detail type="volume"><number>12</number></detail>
+        <extent unit="page">
+            <start>423</start>
+            <end>491</end>
+        </extent>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: baez-article
+  type: article-journal
+  author:
+  - family: Baez
+    given: John C.
+  - family: Lauda
+    given: Aaron D.
+  issued:
+  - year: '2004'
+  title: 'Higher-dimensional algebra V: 2-groups'
+  title-short: Higher-dimensional algebra V
+  container-title: Theory and Applications of Categories
+  page: '423-491'
+  version: '3'
+  volume: '12'
+  annote: An article with eprint and eprinttype fields. Note that the arXiv reference
+    is transformed into a clickable link if hyperref support has been enabled. Compare
+    baez/online, which is the same item given as an online entry
+  URL: http://arxiv.org/abs/math/0307200v3
+  language: en-US
+...
+

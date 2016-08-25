@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="vangennep">
+    <titleInfo>
+        <title>Les rites de passage</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Rites de passage</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Arnold</namePart>
+        <namePart type="family">van Gennep</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1909</dateIssued>
+        <publisher>Nourry</publisher>
+        <place>
+            <placeTerm type="text">Paris</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <note type="annotation">A book entry. Note the format of the printed name and compare the useprefix option in the options field as well as brandt and geer</note>
+    <identifier type="citekey">vangennep</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">french</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">fre</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: vangennep
+  type: book
+  author:
+  - family: Gennep
+    given: Arnold
+    non-dropping-particle: van
+  issued:
+  - year: '1909'
+  title: Les rites de passage
+  title-short: Rites de passage
+  publisher: Nourry
+  publisher-place: Paris
+  annote: A book entry. Note the format of the printed name and compare the useprefix
+    option in the options field as well as brandt and geer
+  language: fr-FR
+...
+

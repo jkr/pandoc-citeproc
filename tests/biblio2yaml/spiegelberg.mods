@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="spiegelberg">
+    <titleInfo>
+        <title>\mkbibquoteIntention und \mkbibquoteIntentionalität in der Scholastik, bei Brentano und Husserl</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Intention und Intentionalität</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Herbert</namePart>
+        <namePart type="family">Spiegelberg</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1969</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Studia Philosophica</title>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <note type="annotation">An article entry. Note the sorttitle and indexsorttitle fields and the markup of the quotes in the database file</note>
+    <identifier type="citekey">spiegelberg</identifier>
+    <part>
+        <detail type="volume"><number>29</number></detail>
+        <extent unit="page">
+            <start>189</start>
+            <end>216</end>
+        </extent>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">german</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">ger</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: spiegelberg
+  type: article-journal
+  author:
+  - family: Spiegelberg
+    given: Herbert
+  issued:
+  - year: '1969'
+  title: “Intention” und “Intentionalität” in der Scholastik, bei Brentano und Husserl
+  title-short: Intention und Intentionalität
+  container-title: Studia Philosophica
+  page: '189-216'
+  volume: '29'
+  annote: An article entry. Note the sorttitle and indexsorttitle fields and the markup
+    of the quotes in the database file
+  language: de-DE
+...
+

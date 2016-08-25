@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="geer">
+    <titleInfo>
+        <title>Earl, Saint, Bishop, Skald – and Music</title>
+        <subTitle>The Orkney Earldom of the Twelfth Century. A Musicological Study</subTitle>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Ingrid</namePart>
+        <namePart type="family">de Geer</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name>
+        <namePart>Uppsala Universitet</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">degree grantor</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1985</dateIssued>
+        <place>
+            <placeTerm type="text">Uppsala</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>Ph.D. thesis</genre>
+    <genre authority="marcgt">thesis</genre>
+    <note type="annotation">This is a typical thesis entry for a PhD thesis. Note the type field in the database file which uses a localization key. Also note the format of the printed name and compare the useprefix option in the options field as well as vangennep</note>
+    <identifier type="citekey">geer</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">british</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: geer
+  type: thesis
+  author:
+  - family: Geer
+    given: Ingrid
+    dropping-particle: de
+  issued:
+  - year: '1985'
+  title: 'Earl, saint, bishop, skald – and music: The Orkney earldom of the twelfth
+    century. A musicological study'
+  title-short: Earl, saint, bishop, skald – and music
+  publisher: Uppsala Universitet
+  publisher-place: Uppsala
+  genre: PhD thesis
+  annote: This is a typical thesis entry for a PhD thesis. Note the type field in
+    the database file which uses a localization key. Also note the format of the printed
+    name and compare the useprefix option in the options field as well as vangennep
+  language: en-GB
+...
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="loh">
+    <titleInfo>
+        <title>High-Resolution Micromachined Interferometric Accelerometer</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Nin</namePart>
+        <namePart type="given">C</namePart>
+        <namePart type="family">Loh</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name>
+        <namePart>Massachusetts Institute of Technology</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">degree grantor</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1992</dateIssued>
+        <place>
+            <placeTerm type="text">Cambridge, Mass.</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>Masters thesis</genre>
+    <genre authority="marcgt">thesis</genre>
+    <note type="annotation">This is a typical thesis entry for an MA thesis. Note the type field in the database file which uses a localization key</note>
+    <identifier type="citekey">loh</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: loh
+  type: thesis
+  author:
+  - family: Loh
+    given: Nin C.
+  issued:
+  - year: '1992'
+  title: High-resolution micromachined interferometric accelerometer
+  publisher: Massachusetts Institute of Technology
+  publisher-place: Cambridge, Mass.
+  genre: Master’s thesis
+  annote: This is a typical thesis entry for an MA thesis. Note the type field in
+    the database file which uses a localization key
+  language: en-US
+...
+

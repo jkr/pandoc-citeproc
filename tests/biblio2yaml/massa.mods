@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="massa">
+    <titleInfo>
+        <title>Crystal structure determination</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Werner</namePart>
+        <namePart type="family">Massa</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>2004</dateIssued>
+        <publisher>Spinger</publisher>
+        <place>
+            <placeTerm type="text">Berlin</placeTerm>
+        </place>
+        <edition>2</edition>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <note type="annotation">A book entry with an edition field</note>
+    <identifier type="citekey">massa</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">british</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: massa
+  type: book
+  author:
+  - family: Massa
+    given: Werner
+  issued:
+  - year: '2004'
+  title: Crystal structure determination
+  publisher: Spinger
+  publisher-place: Berlin
+  edition: '2'
+  annote: A book entry with an edition field
+  language: en-GB
+...
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="aristotle:poetics">
+    <titleInfo>
+        <title>Poetics</title>
+    </titleInfo>
+    <name>
+        <namePart>Aristotle</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">D</namePart>
+        <namePart type="given">W</namePart>
+        <namePart type="family">Lucas</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1968</dateIssued>
+        <publisher>Clarendon Press</publisher>
+        <place>
+            <placeTerm type="text">Oxford</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Clarendon Aristotle</title>
+        </titleInfo>
+    </relatedItem>
+    <note type="annotation">A book entry with an author and an editor as well as a series field</note>
+    <identifier type="citekey">aristotle:poetics</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">british</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: aristotle:poetics
+  type: book
+  author:
+  - family: Aristotle
+  editor:
+  - family: Lucas
+    given: D. W.
+  issued:
+  - year: '1968'
+  title: Poetics
+  title-short: Poetics
+  collection-title: Clarendon Aristotle
+  publisher: Clarendon Press
+  publisher-place: Oxford
+  annote: A book entry with an author and an editor as well as a series field
+  keyword: primary
+  language: en-GB
+...
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="springer">
+    <titleInfo>
+        <title>Mediaeval Pilgrim Routes from Scandinavia to Rome</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Mediaeval Pilgrim Routes</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Otto</namePart>
+        <namePart type="family">Springer</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1950</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Mediaeval Studies</title>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <note type="annotation">A plain article entry</note>
+    <identifier type="citekey">springer</identifier>
+    <part>
+        <detail type="volume"><number>12</number></detail>
+        <extent unit="page">
+            <start>92</start>
+            <end>122</end>
+        </extent>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">british</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: springer
+  type: article-journal
+  author:
+  - family: Springer
+    given: Otto
+  issued:
+  - year: '1950'
+  title: Mediaeval pilgrim routes from Scandinavia to Rome
+  title-short: Mediaeval pilgrim routes
+  container-title: Mediaeval Studies
+  page: '92-122'
+  volume: '12'
+  annote: A plain article entry
+  language: en-GB
+...
+

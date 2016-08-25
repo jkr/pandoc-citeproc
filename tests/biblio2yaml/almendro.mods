@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="almendro">
+    <titleInfo>
+        <title>Elektromagnetisches Signalhorn</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">José</namePart>
+        <namePart type="given">L</namePart>
+        <namePart type="family">Almendro</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Jacinto</namePart>
+        <namePart type="family">Martín</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Alberto</namePart>
+        <namePart type="family">Sánchez</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Fernando</namePart>
+        <namePart type="family">Nozal</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1998</dateIssued>
+        <place>
+            <placeTerm type="text">countryfr and countryuk and countryde</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">patent</genre>
+    <note type="annotation">This is a patent entry with a location field. The number is given in the number field. Note the format of the location field in the database file. Compare laufenberg, sorace, and kowalik</note>
+    <identifier type="citekey">almendro</identifier>
+    <part>
+        <detail type="number"><number>EU-29702195U</number></detail>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">german</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">ger</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: almendro
+  type: patent
+  author:
+  - family: Almendro
+    given: José L.
+  - family: Martín
+    given: Jacinto
+  - family: Sánchez
+    given: Alberto
+  - family: Nozal
+    given: Fernando
+  issued:
+  - year: '1998'
+  title: Elektromagnetisches Signalhorn
+  jurisdiction: France; United Kingdom; Germany
+  annote: This is a patent entry with a location field. The number is given in the
+    number field. Note the format of the location field in the database file. Compare
+    laufenberg, sorace, and kowalik
+  number: EU-29702195U
+  language: de-DE
+...
+

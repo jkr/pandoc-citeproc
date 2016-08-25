@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="bookinbook-1">
+    <titleInfo>
+        <title>Macbeth [title field of bookinbook-1] Tragedies [title field of book-1]</title>
+    </titleInfo>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1975</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <part>
+            <detail type="volume"><number>3</number></detail>
+        </part>
+    </relatedItem>
+    <identifier type="citekey">bookinbook-1</identifier>
+    <part>
+        <detail type="chapter"><number>7</number></detail>
+        <extent unit="page">
+            <start>100</start>
+            <end>200</end>
+        </extent>
+    </part>
+</mods>
+<mods ID="inbook-1">
+    <titleInfo>
+        <title>Macbeth [title field of inbook-1] Tragedies [title field of book-1]</title>
+    </titleInfo>
+    <originInfo>
+        <dateIssued>1975</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>book chapter</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>monographic</issuance>
+        </originInfo>
+        <genre authority="marcgt">book</genre>
+    </relatedItem>
+    <identifier type="citekey">inbook-1</identifier>
+    <part>
+        <detail type="volume"><number>3</number></detail>
+        <detail type="chapter"><number>7</number></detail>
+        <extent unit="page">
+            <start>100</start>
+            <end>200</end>
+        </extent>
+    </part>
+</mods>
+<mods ID="book-1">
+    <titleInfo>
+        <title>Tragedies [title field of book-1] Collected Works [title field of mvbook-1]</title>
+    </titleInfo>
+    <name>
+        <namePart>Shakespeare</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1975</dateIssued>
+        <publisher>Publisher</publisher>
+        <place>
+            <placeTerm type="text">Location</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <part>
+            <detail type="volume"><number>3</number></detail>
+            <extent unit="volumes">
+                <total>4</total>
+            </extent>
+        </part>
+    </relatedItem>
+    <identifier type="citekey">book-1</identifier>
+</mods>
+<mods ID="mvbook-1">
+    <titleInfo>
+        <title>Collected Works [title field of mvbook-1]</title>
+    </titleInfo>
+    <name>
+        <namePart>Shakespeare</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1970/1980</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">mvbook-1</identifier>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: bookinbook-1
+  type: chapter
+  author:
+  - family: Shakespeare
+  container-author:
+  - family: Shakespeare
+  issued:
+  - year: '1975'
+  title: Macbeth \[title field of bookinbook-1\]
+  container-title: Collected works \[title field of mvbook-1\]
+  volume-title: Tragedies \[title field of book-1\]
+  publisher: Publisher
+  publisher-place: Location
+  page: '100-200'
+  volume: '3'
+  number-of-volumes: '4'
+  chapter-number: '7'
+
+- id: inbook-1
+  type: chapter
+  author:
+  - family: Shakespeare
+  container-author:
+  - family: Shakespeare
+  issued:
+  - year: '1975'
+  title: Macbeth \[title field of inbook-1\]
+  container-title: Collected works \[title field of mvbook-1\]
+  volume-title: Tragedies \[title field of book-1\]
+  publisher: Publisher
+  publisher-place: Location
+  page: '100-200'
+  volume: '3'
+  number-of-volumes: '4'
+  chapter-number: '7'
+
+- id: book-1
+  type: book
+  author:
+  - family: Shakespeare
+  container-author:
+  - family: Shakespeare
+  issued:
+  - year: '1975'
+  title: Collected works \[title field of mvbook-1\]
+  volume-title: Tragedies \[title field of book-1\]
+  publisher: Publisher
+  publisher-place: Location
+  volume: '3'
+  number-of-volumes: '4'
+
+- id: mvbook-1
+  type: book
+  author:
+  - family: Shakespeare
+  issued:
+  - year: '1970'
+  - year: '1980'
+  title: Collected works \[title field of mvbook-1\]
+  publisher: Publisher
+  publisher-place: Location
+  number-of-volumes: '4'
+...
+

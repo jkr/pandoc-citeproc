@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="westfahl:frontier">
+    <titleInfo>
+        <title>Space and Beyond</title>
+        <subTitle>The Frontier Theme in Science Fiction</subTitle>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Gary</namePart>
+        <namePart type="family">Westfahl</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>2000</dateIssued>
+        <publisher>Greenwood</publisher>
+        <place>
+            <placeTerm type="text">Westport, Conn. and London</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <note type="annotation">This is a collection entry. Note the format of the location field as well as the subtitle and booksubtitle fields</note>
+    <identifier type="citekey">westfahl:frontier</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: westfahl:frontier
+  type: book
+  editor:
+  - family: Westfahl
+    given: Gary
+  issued:
+  - year: '2000'
+  title: 'Space and beyond: The frontier theme in science fiction'
+  title-short: Space and beyond
+  publisher: Greenwood
+  publisher-place: Westport, Conn.; London
+  annote: This is a collection entry. Note the format of the location field as well
+    as the subtitle and booksubtitle fields
+  language: en-US
+...
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="cicero">
+    <titleInfo>
+        <title>De natura deorum. Über das Wesen der Götter</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>De natura deorum</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Marcus</namePart>
+        <namePart type="given">Tullius</namePart>
+        <namePart type="family">Cicero</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Ursula</namePart>
+        <namePart type="family">Blank-Sangmeister</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Klaus</namePart>
+        <namePart type="family">Thraede</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author of afterword, colophon, etc.</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Ursula</namePart>
+        <namePart type="family">Blank-Sangmeister</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">translator</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1995</dateIssued>
+        <publisher>Reclam</publisher>
+        <place>
+            <placeTerm type="text">Stuttgart</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <language>
+        <languageTerm type="text">langlatin and langgerman</languageTerm>
+    </language>
+    <note type="annotation">A bilingual edition of Cicero’s De natura deorum, with a German translation. Note the format of the language field in the database file, the concatenation of the editor and translator fields, and the afterword field</note>
+    <identifier type="citekey">cicero</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">german</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">ger</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: cicero
+  type: book
+  author:
+  - family: Cicero
+    given: Marcus Tullius
+  editor:
+  - family: Blank-Sangmeister
+    given: Ursula
+  translator:
+  - family: Blank-Sangmeister
+    given: Ursula
+  issued:
+  - year: '1995'
+  title: De natura deorum. Über das Wesen der Götter
+  title-short: De natura deorum
+  publisher: Reclam
+  publisher-place: Stuttgart
+  annote: A bilingual edition of Cicero’s *De natura deorum*, with a German translation.
+    Note the format of the language field in the database file, the concatenation
+    of the editor and translator fields, and the afterword field
+  language: de-DE
+...
+

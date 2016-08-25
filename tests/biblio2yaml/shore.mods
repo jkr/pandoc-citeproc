@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="shore">
+    <titleInfo>
+        <title>Twice-Born, Once Conceived</title>
+        <subTitle>Meaning Construction and Cultural Cognition</subTitle>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Bradd</namePart>
+        <namePart type="family">Shore</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1991-03</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>American Anthropologist</title>
+            <partName>newseries</partName>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <note type="annotation">An article entry with series, volume, and number fields. Note the format of the series which is a localization key</note>
+    <identifier type="citekey">shore</identifier>
+    <part>
+        <detail type="volume"><number>93</number></detail>
+        <detail type="number"><number>1</number></detail>
+        <extent unit="page">
+            <start>9</start>
+            <end>27</end>
+        </extent>
+    </part>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: shore
+  type: article-journal
+  author:
+  - family: Shore
+    given: Bradd
+  issued:
+  - year: '1991'
+    month: '3'
+  title: 'Twice-born, once conceived: Meaning construction and cultural cognition'
+  title-short: Twice-born, once conceived
+  container-title: American Anthropologist
+  collection-title: new series
+  page: '9-27'
+  volume: '93'
+  issue: '1'
+  annote: An article entry with series, volume, and number fields. Note the format
+    of the series which is a localization key
+...
+

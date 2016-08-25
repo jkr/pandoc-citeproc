@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="chiu">
+    <titleInfo>
+        <title>A Hybrid Hierarchical Model of a Multiple Virtual Storage (MVS) Operating System</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Willy</namePart>
+        <namePart type="given">W</namePart>
+        <namePart type="family">Chiu</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">We</namePart>
+        <namePart type="given">Min</namePart>
+        <namePart type="family">Chow</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name>
+        <namePart>IBM</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">sponsor</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1978</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>resreport</genre>
+    <genre>report</genre>
+    <note type="annotation">This is a report entry for a research report. Note the format of the type field in the database file which uses a localization key. The number of the report is given in the number field. Also note the sorttitle and indextitle fields</note>
+    <identifier type="citekey">chiu</identifier>
+    <part>
+        <detail type="report number"><number>RC-6947</number></detail>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+<mods ID="padhye">
+    <titleInfo>
+        <title>A Stochastic Model of TCP Reno Congestion Avoidance and Control</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Jitendra</namePart>
+        <namePart type="family">Padhye</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Victor</namePart>
+        <namePart type="family">Firoiu</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Don</namePart>
+        <namePart type="family">Towsley</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name>
+        <namePart>University of Massachusetts</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">sponsor</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1999</dateIssued>
+        <place>
+            <placeTerm type="text">Amherst, Mass.</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>techreport</genre>
+    <genre>report</genre>
+    <note type="annotation">This is a report entry for a technical report. Note the format of the type field in the database file which uses a localization key. The number of the report is given in the number field. Also note the sorttitle and indextitle fields</note>
+    <identifier type="citekey">padhye</identifier>
+    <part>
+        <detail type="report number"><number>99-02</number></detail>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: chiu
+  type: report
+  author:
+  - family: Chiu
+    given: Willy W.
+  - family: Chow
+    given: We Min
+  issued:
+  - year: '1978'
+  title: A hybrid hierarchical model of a Multiple Virtual Storage (MVS) operating
+    system
+  publisher: IBM
+  genre: research report
+  annote: This is a report entry for a research report. Note the format of the type
+    field in the database file which uses a localization key. The number of the report
+    is given in the number field. Also note the sorttitle and indextitle fields
+  number: RC-6947
+  language: en-US
+
+- id: padhye
+  type: report
+  author:
+  - family: Padhye
+    given: Jitendra
+  - family: Firoiu
+    given: Victor
+  - family: Towsley
+    given: Don
+  issued:
+  - year: '1999'
+  title: A stochastic model of TCP Reno congestion avoidance and control
+  publisher: University of Massachusetts
+  publisher-place: Amherst, Mass.
+  genre: technical report
+  annote: This is a report entry for a technical report. Note the format of the type
+    field in the database file which uses a localization key. The number of the report
+    is given in the number field. Also note the sorttitle and indextitle fields
+  abstract: The steady state performance of a bulk transfer TCP flow (i.e. a flow
+    with a large amount of data to send, such as FTP transfers) may be characterized
+    by three quantities. The first is the send rate, which is the amount of data sent
+    by the sender in unit time. The second is the throughput, which is the amount
+    of data received by the receiver in unit time. Note that the throughput will always
+    be less than or equal to the send rate due to losses. Finally, the number of non-duplicate
+    packets received by the receiver in unit time gives us the goodput of the connection.
+    The goodput is always less than or equal to the throughput, since the receiver
+    may receive two copies of the same packet due to retransmissions by the sender.
+    In a previous paper, we presented a simple model for predicting the steady state
+    send rate of a bulk transfer TCP flow as a function of loss rate and round trip
+    time. In this paper, we extend that work in two ways. First, we analyze the performance
+    of bulk transfer TCP flows using more precise, stochastic analysis. Second, we
+    build upon the previous analysis to provide both an approximate formula as well
+    as a more accurate stochastic model for the steady state throughput of a bulk
+    transfer TCP flow.
+  number: '99-02'
+  language: en-US
+...
+

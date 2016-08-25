@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="herrmann">
+    <titleInfo>
+        <title>A Carbocyclic Carbene as an Efficient Catalyst Ligand for C–C Coupling Reactions</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Wolfgang</namePart>
+        <namePart type="given">A</namePart>
+        <namePart type="family">Herrmann</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Karl</namePart>
+        <namePart type="family">Öfele</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Sabine</namePart>
+        <namePart type="given">K</namePart>
+        <namePart type="family">Schneider</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Eberhardt</namePart>
+        <namePart type="family">Herdtweck</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Stephan</namePart>
+        <namePart type="given">D</namePart>
+        <namePart type="family">Hoffmann</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>2006</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Angew. Chem. Int. Ed.</title>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">herrmann</identifier>
+    <part>
+        <detail type="volume"><number>45</number></detail>
+        <detail type="number"><number>23</number></detail>
+        <extent unit="page">
+            <start>3859</start>
+            <end>3862</end>
+        </extent>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">english</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: herrmann
+  type: article-journal
+  author:
+  - family: Herrmann
+    given: Wolfgang A.
+  - family: Öfele
+    given: Karl
+  - family: Schneider
+    given: Sabine K.
+  - family: Herdtweck
+    given: Eberhardt
+  - family: Hoffmann
+    given: Stephan D.
+  issued:
+  - year: '2006'
+  title: A carbocyclic carbene as an efficient catalyst ligand for C–C coupling reactions
+  container-title: Angew. Chem. Int. Ed.
+  page: '3859-3862'
+  volume: '45'
+  issue: '23'
+  language: en-US
+...
+

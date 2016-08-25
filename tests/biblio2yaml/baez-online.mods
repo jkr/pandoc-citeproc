@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="baez-online">
+    <titleInfo>
+        <title>Higher-Dimensional Algebra V: 2-Groups</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">John</namePart>
+        <namePart type="given">C</namePart>
+        <namePart type="family">Baez</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Aaron</namePart>
+        <namePart type="given">D</namePart>
+        <namePart type="family">Lauda</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>2004-10-27</dateIssued>
+        <edition>3</edition>
+    </originInfo>
+    <typeOfResource>software, multimedia</typeOfResource>
+    <genre>web page</genre>
+    <note type="annotation">An online reference from arXiv. Note the eprint and eprinttype fields. Compare baez\slash article which is the same item given as an article entry with eprint information</note>
+    <identifier type="citekey">baez-online</identifier>
+    <identifier type="arXiv">math/0307200v3</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: baez-online
+  type: webpage
+  author:
+  - family: Baez
+    given: John C.
+  - family: Lauda
+    given: Aaron D.
+  issued:
+  - year: '2004'
+    month: '10'
+    day: '27'
+  title: 'Higher-dimensional algebra V: 2-groups'
+  title-short: Higher-dimensional algebra V
+  version: '3'
+  annote: An online reference from arXiv. Note the eprint and eprinttype fields. Compare
+    baez/article which is the same item given as an article entry with eprint information
+  URL: http://arxiv.org/abs/math/0307200v3
+  language: en-US
+...
+

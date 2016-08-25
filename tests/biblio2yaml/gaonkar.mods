@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="gaonkar">
+    <titleInfo>
+        <title>Alternative Modernities</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Dilip</namePart>
+        <namePart type="given">Parameshwar</namePart>
+        <namePart type="family">Gaonkar</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>2001</dateIssued>
+        <publisher>Duke University Press</publisher>
+        <place>
+            <placeTerm type="text">Durham and London</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <note type="annotation">This is a collection entry. Note the format of the location field in the database file as well as the isbn field</note>
+    <identifier type="isbn">0-822-32714-7</identifier>
+    <identifier type="citekey">gaonkar</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: gaonkar
+  type: book
+  editor:
+  - family: Gaonkar
+    given: Dilip Parameshwar
+  issued:
+  - year: '2001'
+  title: Alternative modernities
+  publisher: Duke University Press
+  publisher-place: Durham; London
+  annote: This is a collection entry. Note the format of the location field in the
+    database file as well as the isbn field
+  ISBN: '0-822-32714-7'
+  language: en-US
+...
+

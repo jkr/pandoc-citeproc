@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="chiu">
+    <titleInfo>
+        <title>A Hybrid Hierarchical Model of a Multiple Virtual Storage (MVS) Operating System</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Willy</namePart>
+        <namePart type="given">W</namePart>
+        <namePart type="family">Chiu</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">We</namePart>
+        <namePart type="given">Min</namePart>
+        <namePart type="family">Chow</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name>
+        <namePart>IBM</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">sponsor</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1978</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>resreport</genre>
+    <genre>report</genre>
+    <note type="annotation">This is a report entry for a research report. Note the format of the type field in the database file which uses a localization key. The number of the report is given in the number field. Also note the sorttitle and indextitle fields</note>
+    <identifier type="citekey">chiu</identifier>
+    <part>
+        <detail type="report number"><number>RC-6947</number></detail>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: chiu
+  type: report
+  author:
+  - family: Chiu
+    given: Willy W.
+  - family: Chow
+    given: We Min
+  issued:
+  - year: '1978'
+  title: A hybrid hierarchical model of a multiple virtual storage (MVS) operating
+    system
+  publisher: IBM
+  genre: research report
+  annote: This is a report entry for a research report. Note the format of the type
+    field in the database file which uses a localization key. The number of the report
+    is given in the number field. Also note the sorttitle and indextitle fields
+  number: RC-6947
+  language: en-US
+...
+

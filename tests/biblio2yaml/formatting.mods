@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="item1">
+    <titleInfo>
+        <title>The Title: italics, bold, subscript, superscript, small-caps</title>
+    </titleInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">item1</identifier>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: item1
+  type: article-journal
+  title: 'The title: *Italics*, **bold**, ~subscript~, ^superscript^, <span style="font-variant:small-caps;">small-caps</span>'
+  title-short: The title
+...
+

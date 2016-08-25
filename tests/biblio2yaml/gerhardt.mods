@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="gerhardt">
+    <titleInfo>
+        <title>The Federal Appointments Process</title>
+        <subTitle>A Constitutional and Historical Analysis</subTitle>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Federal Appointments Process</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Michael</namePart>
+        <namePart type="given">J</namePart>
+        <namePart type="family">Gerhardt</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>2000</dateIssued>
+        <publisher>Duke University Press</publisher>
+        <place>
+            <placeTerm type="text">Durham and London</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <note type="annotation">This is a book entry. Note the format of the location field as well as the sorttitle and indextitle fields</note>
+    <identifier type="citekey">gerhardt</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: gerhardt
+  type: book
+  author:
+  - family: Gerhardt
+    given: Michael J.
+  issued:
+  - year: '2000'
+  title: 'The federal appointments process: A constitutional and historical analysis'
+  title-short: Federal appointments process
+  publisher: Duke University Press
+  publisher-place: Durham; London
+  annote: This is a book entry. Note the format of the location field as well as the
+    sorttitle and indextitle fields
+  language: en-US
+...
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="cotton">
+    <titleInfo>
+        <title>Advanced inorganic chemistry</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Frank</namePart>
+        <namePart type="given">Albert</namePart>
+        <namePart type="family">Cotton</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Geoffrey</namePart>
+        <namePart type="family">Wilkinson</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Carlos</namePart>
+        <namePart type="given">A</namePart>
+        <namePart type="family">Murillio</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Manfred</namePart>
+        <namePart type="family">Bochmann</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1999</dateIssued>
+        <publisher>Wiley</publisher>
+        <place>
+            <placeTerm type="text">Chichester</placeTerm>
+        </place>
+        <edition>6</edition>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <note type="annotation">A book entry with \arabicauthor authors and an edition field. By default, long author and editor lists are automatically truncated. This is configurable</note>
+    <identifier type="citekey">cotton</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">british</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: cotton
+  type: book
+  author:
+  - family: Cotton
+    given: Frank Albert
+  - family: Wilkinson
+    given: Geoffrey
+  - family: Murillio
+    given: Carlos A.
+  - family: Bochmann
+    given: Manfred
+  issued:
+  - year: '1999'
+  title: Advanced inorganic chemistry
+  publisher: Wiley
+  publisher-place: Chichester
+  edition: '6'
+  annote: A book entry with author authors and an edition field. By default, long
+    author and editor lists are automatically truncated. This is configurable
+  language: en-GB
+...
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="aristotle:rhetoric">
+    <titleInfo>
+        <title>The Rhetoric of Aristotle with a commentary by the late Edward Meredith Cope</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Rhetoric</title>
+    </titleInfo>
+    <name>
+        <namePart>Aristotle</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Edward</namePart>
+        <namePart type="given">Meredith</namePart>
+        <namePart type="family">Cope</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">editor</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Edward</namePart>
+        <namePart type="given">Meredith</namePart>
+        <namePart type="family">Cope</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">commentator</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1877</dateIssued>
+        <publisher>Cambridge University Press</publisher>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title/>
+        </titleInfo>
+        <part>
+            <extent unit="volumes">
+                <total>3</total>
+            </extent>
+        </part>
+    </relatedItem>
+    <note type="annotation">A commented edition. Note the concatenation of the editor and commentator fields as well as the volumes, sorttitle, and indextitle fields</note>
+    <identifier type="citekey">aristotle:rhetoric</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">british</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: aristotle:rhetoric
+  type: book
+  author:
+  - family: Aristotle
+  editor:
+  - family: Cope
+    given: Edward Meredith
+  issued:
+  - year: '1877'
+  title: The rhetoric of Aristotle with a commentary by the late Edward Meredith Cope
+  title-short: Rhetoric
+  publisher: Cambridge University Press
+  number-of-volumes: '3'
+  annote: A commented edition. Note the concatenation of the editor and commentator
+    fields as well as the volumes, sorttitle, and indextitle fields
+  keyword: primary
+  language: en-GB
+...
+

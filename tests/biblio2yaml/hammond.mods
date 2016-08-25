@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="hammond">
+    <titleInfo>
+        <title>The basics of crystallography and diffraction</title>
+    </titleInfo>
+    <titleInfo type="abbreviated">
+        <title>Crystallography and diffraction</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Christopher</namePart>
+        <namePart type="family">Hammond</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1997</dateIssued>
+        <publisher>International Union of Crystallography and Oxford University Press</publisher>
+        <place>
+            <placeTerm type="text">Oxford</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <note type="annotation">A book entry. Note the sorttitle and indextitle fields as well as the format of the publisher field</note>
+    <identifier type="citekey">hammond</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">british</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: hammond
+  type: book
+  author:
+  - family: Hammond
+    given: Christopher
+  issued:
+  - year: '1997'
+  title: The basics of crystallography and diffraction
+  title-short: Crystallography and diffraction
+  publisher: International Union of Crystallography; Oxford University Press
+  publisher-place: Oxford
+  annote: A book entry. Note the sorttitle and indextitle fields as well as the format
+    of the publisher field
+  language: en-GB
+...
+

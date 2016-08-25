@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="weinberg">
+    <titleInfo>
+        <title>A Model of Leptons</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Steven</namePart>
+        <namePart type="family">Weinberg</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1967</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Phys. Rev. Lett.</title>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">weinberg</identifier>
+    <part>
+        <detail type="volume"><number>19</number></detail>
+        <extent unit="page">
+            <start>1264</start>
+            <end>1266</end>
+        </extent>
+    </part>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: weinberg
+  type: article-journal
+  author:
+  - family: Weinberg
+    given: Steven
+  issued:
+  - year: '1967'
+  title: A model of leptons
+  container-title: Phys. Rev. Lett.
+  page: '1264-1266'
+  volume: '19'
+...
+

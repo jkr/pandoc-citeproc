@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="yoon">
+    <titleInfo>
+        <title>Palladium pincer complexes with reduced bond angle strain: efficient catalysts for the Heck reaction</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Myeong</namePart>
+        <namePart type="given">S.</namePart>
+        <namePart type="family">Yoon</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Dowook</namePart>
+        <namePart type="family">Ryu</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Jeongryul</namePart>
+        <namePart type="family">Kim</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">Kyo</namePart>
+        <namePart type="given">Han</namePart>
+        <namePart type="family">Ahn</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>2006</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Organometallics</title>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <identifier type="citekey">yoon</identifier>
+    <part>
+        <detail type="volume"><number>25</number></detail>
+        <detail type="number"><number>10</number></detail>
+        <extent unit="page">
+            <start>2409</start>
+            <end>2411</end>
+        </extent>
+    </part>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: yoon
+  type: article-journal
+  author:
+  - family: Yoon
+    given: Myeong S.
+  - family: Ryu
+    given: Dowook
+  - family: Kim
+    given: Jeongryul
+  - family: Ahn
+    given: Kyo Han
+  issued:
+  - year: '2006'
+  title: 'Palladium pincer complexes with reduced bond angle strain: Efficient catalysts
+    for the Heck reaction'
+  title-short: Palladium pincer complexes with reduced bond angle strain
+  container-title: Organometallics
+  page: '2409-2411'
+  volume: '25'
+  issue: '10'
+...

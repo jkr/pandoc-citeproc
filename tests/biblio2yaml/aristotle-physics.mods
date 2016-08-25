@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="aristotle:physics">
+    <titleInfo>
+        <title>Physics</title>
+    </titleInfo>
+    <name>
+        <namePart>Aristotle</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">P</namePart>
+        <namePart type="given">H</namePart>
+        <namePart type="family">Wicksteed</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">translator</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">F</namePart>
+        <namePart type="given">M</namePart>
+        <namePart type="family">Cornford</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">translator</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1929</dateIssued>
+        <publisher>G. P. Putnam</publisher>
+        <place>
+            <placeTerm type="text">New York</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <note type="annotation">A book entry with a translator field</note>
+    <identifier type="citekey">aristotle:physics</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: aristotle:physics
+  type: book
+  author:
+  - family: Aristotle
+  translator:
+  - family: Wicksteed
+    given: P. H.
+  - family: Cornford
+    given: F. M.
+  issued:
+  - year: '1929'
+  title: Physics
+  title-short: Physics
+  publisher: G. P. Putnam
+  publisher-place: New York
+  annote: A book entry with a translator field
+  keyword: primary
+  language: en-US
+...
+

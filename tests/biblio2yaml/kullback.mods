@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="kullback">
+    <titleInfo>
+        <title>Information Theory and Statistics</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Solomon</namePart>
+        <namePart type="family">Kullback</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <issuance>monographic</issuance>
+        <dateIssued>1959</dateIssued>
+        <publisher>John Wiley &amp; Sons</publisher>
+        <place>
+            <placeTerm type="text">New York</placeTerm>
+        </place>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre authority="marcgt">book</genre>
+    <identifier type="citekey">kullback</identifier>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">american</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: kullback
+  type: book
+  author:
+  - family: Kullback
+    given: Solomon
+  issued:
+  - year: '1959'
+  title: Information theory and statistics
+  publisher: John Wiley & Sons
+  publisher-place: New York
+  language: en-US
+...
+

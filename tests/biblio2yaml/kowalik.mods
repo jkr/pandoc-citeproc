@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="kowalik">
+    <titleInfo>
+        <title>Estimateur d’un défaut de fonctionnement d’un modulateur en quadrature et étage de modulation l’utilisant</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">F</namePart>
+        <namePart type="family">Kowalik</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <name type="personal">
+        <namePart type="given">M</namePart>
+        <namePart type="family">Isard</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1995-01-11</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>patreqfr</genre>
+    <genre authority="marcgt">patent</genre>
+    <note type="annotation">This is a patent entry for a French patent request with a full date. The number is given in the number field. Note the format of the type and date fields in the database file. Compare almendro, laufenberg, and sorace</note>
+    <identifier type="citekey">kowalik</identifier>
+    <part>
+        <detail type="number"><number>9500261</number></detail>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">french</languageTerm>
+            <languageTerm type="code" authority="iso639-2b">fre</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: kowalik
+  type: patent
+  author:
+  - family: Kowalik
+    given: F.
+  - family: Isard
+    given: M.
+  issued:
+  - year: '1995'
+    month: '1'
+    day: '11'
+  title: Estimateur d’un défaut de fonctionnement d’un modulateur en quadrature et
+    étage de modulation l’utilisant
+  genre: French patent request
+  annote: This is a patent entry for a French patent request with a full date. The
+    number is given in the number field. Note the format of the type and date fields
+    in the database file. Compare almendro, laufenberg, and sorace
+  number: '9500261'
+  language: fr-FR
+...
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="gillies">
+    <titleInfo>
+        <title>Herder and the Preparation of Goethe’s Idea of World Literature</title>
+    </titleInfo>
+    <name type="personal">
+        <namePart type="given">Alexander</namePart>
+        <namePart type="family">Gillies</namePart>
+        <role>
+            <roleTerm authority="marcrelator" type="text">author</roleTerm>
+        </role>
+    </name>
+    <originInfo>
+        <dateIssued>1933</dateIssued>
+    </originInfo>
+    <typeOfResource>text</typeOfResource>
+    <genre>journal article</genre>
+    <relatedItem type="host">
+        <titleInfo>
+            <title>Publications of the English Goethe Society</title>
+            <partName>newseries</partName>
+        </titleInfo>
+        <originInfo>
+            <issuance>continuing</issuance>
+        </originInfo>
+        <genre authority="marcgt">periodical</genre>
+    </relatedItem>
+    <note type="annotation">An article entry with a series and a volume field. Note that format of the series field in the database file</note>
+    <identifier type="citekey">gillies</identifier>
+    <part>
+        <detail type="volume"><number>9</number></detail>
+        <extent unit="page">
+            <start>46</start>
+            <end>67</end>
+        </extent>
+    </part>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="text">british</languageTerm>
+        </languageOfCataloging>
+    </recordInfo>
+</mods>
+</modsCollection>
+
+
+---
+references:
+- id: gillies
+  type: article-journal
+  author:
+  - family: Gillies
+    given: Alexander
+  issued:
+  - year: '1933'
+  title: Herder and the preparation of Goethe’s idea of world literature
+  container-title: Publications of the English Goethe Society
+  collection-title: new series
+  page: '46-67'
+  volume: '9'
+  annote: An article entry with a series and a volume field. Note that format of the
+    series field in the database file
+  language: en-GB
+...
+
