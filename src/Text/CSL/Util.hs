@@ -44,6 +44,7 @@ module Text.CSL.Util
   , mapping'
   , parseRomanNumeral
   , isRange
+  , toLocale
   ) where
 import Data.Aeson
 import Data.Aeson.Types (Parser)
@@ -431,3 +432,66 @@ pRomanNumeral = do
 
 isRange :: String -> Bool
 isRange s = ',' `elem` s || '-' `elem` s || '\x2013' `elem` s
+
+toLocale :: String -> String
+toLocale "english"    = "en-US" -- "en-EN" unavailable in CSL
+toLocale "usenglish"  = "en-US"
+toLocale "american"   = "en-US"
+toLocale "british"    = "en-GB"
+toLocale "ukenglish"  = "en-GB"
+toLocale "canadian"   = "en-US" -- "en-CA" unavailable in CSL
+toLocale "australian" = "en-GB" -- "en-AU" unavailable in CSL
+toLocale "newzealand" = "en-GB" -- "en-NZ" unavailable in CSL
+toLocale "afrikaans"  = "af-ZA"
+toLocale "arabic"     = "ar"
+toLocale "basque"     = "eu"
+toLocale "bulgarian"  = "bg-BG"
+toLocale "catalan"    = "ca-AD"
+toLocale "croatian"   = "hr-HR"
+toLocale "czech"      = "cs-CZ"
+toLocale "danish"     = "da-DK"
+toLocale "dutch"      = "nl-NL"
+toLocale "estonian"   = "et-EE"
+toLocale "finnish"    = "fi-FI"
+toLocale "canadien"   = "fr-CA"
+toLocale "acadian"    = "fr-CA"
+toLocale "french"     = "fr-FR"
+toLocale "francais"   = "fr-FR"
+toLocale "austrian"   = "de-AT"
+toLocale "naustrian"  = "de-AT"
+toLocale "german"     = "de-DE"
+toLocale "germanb"    = "de-DE"
+toLocale "ngerman"    = "de-DE"
+toLocale "greek"      = "el-GR"
+toLocale "polutonikogreek" = "el-GR"
+toLocale "hebrew"     = "he-IL"
+toLocale "hungarian"  = "hu-HU"
+toLocale "icelandic"  = "is-IS"
+toLocale "italian"    = "it-IT"
+toLocale "japanese"   = "ja-JP"
+toLocale "latvian"    = "lv-LV"
+toLocale "lithuanian" = "lt-LT"
+toLocale "magyar"     = "hu-HU"
+toLocale "mongolian"  = "mn-MN"
+toLocale "norsk"      = "nb-NO"
+toLocale "nynorsk"    = "nn-NO"
+toLocale "farsi"      = "fa-IR"
+toLocale "polish"     = "pl-PL"
+toLocale "brazil"     = "pt-BR"
+toLocale "brazilian"  = "pt-BR"
+toLocale "portugues"  = "pt-PT"
+toLocale "portuguese" = "pt-PT"
+toLocale "romanian"   = "ro-RO"
+toLocale "russian"    = "ru-RU"
+toLocale "serbian"    = "sr-RS"
+toLocale "serbianc"   = "sr-RS"
+toLocale "slovak"     = "sk-SK"
+toLocale "slovene"    = "sl-SL"
+toLocale "spanish"    = "es-ES"
+toLocale "swedish"    = "sv-SE"
+toLocale "thai"       = "th-TH"
+toLocale "turkish"    = "tr-TR"
+toLocale "ukrainian"  = "uk-UA"
+toLocale "vietnamese" = "vi-VN"
+toLocale "latin"      = "la"
+toLocale x            = x
