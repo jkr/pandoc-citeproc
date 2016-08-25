@@ -1301,12 +1301,19 @@ getChildRefType hostModsRef childModsRef =
       | otherwise -> Chapter
 
 
-getHostModsReference :: ModsReference -> Maybe ModsReference
-getHostModsReference modsRef =
+getRelatedRefByType :: RelItemType -> ModsReference -> Maybe ModsReference
+getRelatedRefByType relType modsRef =
   listToMaybe $
   map relItemModsRef $ 
-  filter (\ri -> relItemType ri `elem` [Host, Series]) $
+  filter (\ri -> relItemType ri == relType) $
   modsRelated modsRef
+
+-- getHostModsReference :: ModsReference -> Maybe ModsReference
+-- getHostModsReference modsRef =
+--   listToMaybe $
+--   map relItemModsRef $ 
+--   filter (\ri -> relItemType ri `elem` [Host, Series]) $
+--   modsRelated modsRef
 
 replaceIfNonEmpty :: (Monoid a, Eq a)
                   => (Reference -> a)
@@ -1494,7 +1501,7 @@ modsRefToReference' modsRef =
 
 modsRefToReference :: ModsReference -> Reference
 modsRefToReference modsRef =
-  case getHostModsReference modsRef of
+  case getRelatedRefByType Host modsRef of
     Just hostModsRef -> withHostInfo hostModsRef modsRef
     Nothing          -> modsRefToReference' modsRef
         

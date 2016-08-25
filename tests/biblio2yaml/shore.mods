@@ -2,8 +2,8 @@
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
 <mods ID="shore">
     <titleInfo>
-        <title>Twice-Born, Once Conceived</title>
-        <subTitle>Meaning Construction and Cultural Cognition</subTitle>
+        <title>Twice-born, once conceived</title>
+        <subTitle>Meaning construction and cultural cognition</subTitle>
     </titleInfo>
     <name type="personal">
         <namePart type="given">Bradd</namePart>
@@ -20,7 +20,6 @@
     <relatedItem type="host">
         <titleInfo>
             <title>American Anthropologist</title>
-            <partName>newseries</partName>
         </titleInfo>
         <originInfo>
             <issuance>continuing</issuance>
@@ -54,7 +53,6 @@ references:
   title: 'Twice-born, once conceived: Meaning construction and cultural cognition'
   title-short: Twice-born, once conceived
   container-title: American Anthropologist
-  collection-title: new series
   page: '9-27'
   volume: '93'
   issue: '1'
