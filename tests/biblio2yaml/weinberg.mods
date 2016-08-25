@@ -2,7 +2,7 @@
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
 <mods ID="weinberg">
     <titleInfo>
-        <title>A Model of Leptons</title>
+        <title>A model of leptons</title>
     </titleInfo>
     <name type="personal">
         <namePart type="given">Steven</namePart>
@@ -47,8 +47,7 @@ references:
   issued:
   - year: '1967'
   title: A model of leptons
-  container-title: Phys. Rev. Lett.
+  container-title: Phys. Rev. Lett.
   page: '1264-1266'
   volume: '19'
 ...
-
