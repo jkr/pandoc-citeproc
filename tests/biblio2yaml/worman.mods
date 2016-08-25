@@ -49,6 +49,6 @@ references:
   title-short: Cast of character
   publisher: University of Texas Press
   publisher-place: Austin
-  note: A book entry. Note the sorttitle and indextitle fields
+  annote: A book entry. Note the sorttitle and indextitle fields
   language: en-US
 ...
