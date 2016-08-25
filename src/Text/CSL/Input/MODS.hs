@@ -9,7 +9,7 @@ import qualified Text.Pandoc.Builder as PB
 import qualified Text.XML as X
 import Text.XML.Cursor
 import Text.CSL.Reference (Reference(..), RefType(..), RefDate(..),
-                           Literal(..), emptyReference)
+                           Literal(..), emptyReference, parseDate)
 import Text.CSL.Style (Formatted(..), Agent(..), emptyAgent)
 import Text.CSL.Util (toLocale)
 import qualified Text.Pandoc.Definition as P
@@ -194,7 +194,8 @@ partCursToPart curs =
         element (X.Name "date" (Just modsNS) Nothing) >>=
         descendant >>=
         content >>=
-        (\x -> [toRefDate x])
+        (parseDate . T.unpack)
+
   in
     Part pageExtent details date
 
@@ -264,14 +265,14 @@ subjCursorToSubject subjCurs =
             }
 
 
-toRefDate :: Text -> RefDate
-toRefDate txt
-  -- | Just ('c', txt') <- T.uncons txt =
-  --     let rd = toRefDate txt' in rd {circa = True}
-  | T.all isDigit txt =
-      RefDate (Literal $ T.unpack txt) mempty mempty mempty mempty False
-  | otherwise = 
-      RefDate mempty mempty mempty mempty (Literal $ T.unpack txt) False
+-- toRefDate :: Text -> RefDate
+-- toRefDate txt
+--   -- | Just ('c', txt') <- T.uncons txt =
+--   --     let rd = toRefDate txt' in rd {circa = True}
+--   | T.all isDigit txt =
+--       RefDate (Literal $ T.unpack txt) mempty mempty mempty mempty False
+--   | otherwise = 
+--       RefDate mempty mempty mempty mempty (Literal $ T.unpack txt) False
       
 origCursToOriginInfo :: Cursor -> OriginInfo
 origCursToOriginInfo origCurs =
@@ -290,12 +291,12 @@ origCursToOriginInfo origCurs =
         element (X.Name "dateIssued" (Just modsNS) Nothing) >>=
         descendant >>=
         content >>=
-        (\x -> [toRefDate x])
+        (parseDate . T.unpack)
       origCreated' = child origCurs >>=
         element (X.Name "dateCreated" (Just modsNS) Nothing) >>=
         descendant >>=
         content >>=
-        (\x -> [toRefDate x])
+        (parseDate . T.unpack)
       origEdition' = child origCurs >>=
         element (X.Name "edition" (Just modsNS) Nothing) >>=
         descendant >>=
