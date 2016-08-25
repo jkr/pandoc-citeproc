@@ -6,7 +6,7 @@
         <subTitle>Style in Greek literature</subTitle>
     </titleInfo>
     <titleInfo type="abbreviated">
-        <title>Cast of Character</title>
+        <title>Cast of character</title>
     </titleInfo>
     <name type="personal">
         <namePart type="given">Nancy</namePart>
@@ -52,4 +52,3 @@ references:
   note: A book entry. Note the sorttitle and indextitle fields
   language: en-US
 ...
-

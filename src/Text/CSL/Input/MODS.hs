@@ -11,6 +11,7 @@ import Text.XML.Cursor
 import Text.CSL.Reference (Reference(..), RefType(..), RefDate(..),
                            Literal(..), emptyReference)
 import Text.CSL.Style (Formatted(..), Agent(..), emptyAgent)
+import Text.CSL.Util (toLocale)
 import qualified Text.Pandoc.Definition as P
 import Data.Text (Text)
 import qualified Data.Text as T
@@ -50,6 +51,7 @@ data Location = Location { locUrl :: [Text]
                          } deriving (Show, Eq)
 
 data RecordInfo = RecordInfo { recInfoId :: [Text]
+                             , recInfoLang :: [Language]
                              } deriving (Show, Eq)
 
 data Range = FromBeginning Text
@@ -80,6 +82,7 @@ data Part = Part { partPageRange :: [Range]
 
 data TitleInfo = TitleInfo { titleInfoTitle :: [Text]
                            , titleInfoSubTitle :: [Text]
+                           , titleInfoAbbreviated :: [Text]
                            } deriving (Show, Eq)
 
 data Name = Name { nName  :: Agent
@@ -227,17 +230,21 @@ relCursorToRelItem curs = do
   return $ RelatedItem relItemType' modsRef
 
 -- TODO: ADD CODE
-langCursToLanguage :: Cursor -> Language
+langCursToLanguage :: Cursor -> [Language]
 langCursToLanguage curs =
-  let langs = child curs >>=
+  let langsText = child curs >>=
         element (X.Name "languageTerm" (Just modsNS) Nothing) >>=
         attributeIs (X.Name "type" Nothing Nothing) "text" >>=
         descendant >>=
-        content 
+        content >>=
+        (\l -> [T.pack $ toLocale $ T.unpack l])
+      langsCode = child curs >>=
+        element (X.Name "languageTerm" (Just modsNS) Nothing) >>=
+        attributeIs (X.Name "type" Nothing Nothing) "code" >>=
+        descendant >>=
+        content
   in
-    case langs of
-      [] -> mempty
-      t : _ -> Language t
+    map Language $ langsCode ++ langsText
   
 subjCursorToSubject :: Cursor -> Subject
 subjCursorToSubject subjCurs =
@@ -474,25 +481,41 @@ tiCursToTitleInfo ti =
                      element (X.Name "subTitle" (Just modsNS) Nothing) >>=
                      descendant >>=
                      content
-
+      abbrevText = attributeIs (X.Name "type" Nothing Nothing) "abbreviated" ti >>=
+                   child >>=
+                   element (X.Name "title" (Just modsNS) Nothing) >>=
+                   descendant >>=
+                   content
   in
     case subTitleText of
       [] -> TitleInfo { titleInfoTitle = map fst splits
                       , titleInfoSubTitle = map snd splits
+                      , titleInfoAbbreviated = abbrevText
                       }
         where splits = map splitTitle titleText
       _  -> TitleInfo { titleInfoTitle = titleText
                       , titleInfoSubTitle = subTitleText
+                      , titleInfoAbbreviated = abbrevText
                       }
          
 recInfoCursorToRecInfo :: Cursor -> RecordInfo
 recInfoCursorToRecInfo curs =
   let ident = child curs >>=
         element (X.Name "recordIdentifier" (Just modsNS) Nothing) >>=
+        child >>=
         descendant >>=
         content
+      lang = child curs >>=
+        element (X.Name "languageOfCataloging" (Just modsNS) Nothing) >>=
+        langCursToLanguage
+        -- child >>=
+        -- element (X.Name "languageTerm" (Just modsNS) Nothing) >>=
+        -- descendant >>=
+        -- content
   in
-    RecordInfo {recInfoId = ident}
+    RecordInfo { recInfoId = ident
+               , recInfoLang = lang
+               }
 
 locationCursorToLocation :: Cursor -> Location
 locationCursorToLocation curs = 
@@ -526,9 +549,9 @@ modsCursToModsReference modsCurs =
         child modsCurs >>=
         element (X.Name "originInfo" (Just modsNS) Nothing)
 
-      lang = map langCursToLanguage $
-        child modsCurs >>=
-        element (X.Name "language" (Just modsNS) Nothing)
+      lang = child modsCurs >>=
+        element (X.Name "language" (Just modsNS) Nothing) >>=
+        langCursToLanguage
 
       abstr = child modsCurs >>=
         element (X.Name "abstract" (Just modsNS) Nothing) >>=
@@ -606,8 +629,12 @@ resolveTitleInfos tis =
               concatMap titleInfoTitle tis
       subtitle = dropWhile (mempty==) $
                  concatMap titleInfoSubTitle tis
+      abbrev = dropWhile (mempty==) $
+               concatMap titleInfoAbbreviated tis
+                 
   in TitleInfo { titleInfoTitle = title'
                , titleInfoSubTitle = subtitle
+               , titleInfoAbbreviated = abbrev
                }
 
 
@@ -623,7 +650,7 @@ tiToFullTitle ti =
          else t <> ": " <> capitalize st
 
 tiToShortTitle :: TitleInfo -> Text
-tiToShortTitle ti =
+tiToShortTitle ti | null $ titleInfoAbbreviated ti =
   let t = listToMonoid $ titleInfoTitle ti
       st = listToMonoid $ titleInfoSubTitle ti
   in case () of
@@ -632,6 +659,7 @@ tiToShortTitle ti =
       , t' /= mempty
       , st' /= mempty -> t'
       | otherwise -> mempty
+tiToShortTitle ti = listToMonoid $ titleInfoAbbreviated ti
 
 -- For the time being, we're just going to imitate bibutils. We can do
 -- better in the future (ie, place 'a', 'b', ..., 'aa', 'ab' on
@@ -935,8 +963,9 @@ modsRefToReference' modsRef =
                   , language = Literal $
                                T.unpack $
                                listToMonoid $
-                               map fromLanguage $ 
-                               modsLanguage modsRef
+                               ((map fromLanguage $ modsLanguage modsRef)
+                                ++
+                                (map fromLanguage $ concatMap recInfoLang $ modsRecordInfo modsRef))
                   }
 
 modsRefToReference :: ModsReference -> Reference
