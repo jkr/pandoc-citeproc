@@ -36,7 +36,7 @@ main = do
   fs <- filter (\f -> takeExtension f `elem` [".bibtex",".biblatex"])
            `fmap` getDirectoryContents "tests/biblio2yaml"
   fs' <- filter (\f -> takeExtension f == ".mods")
-           `fmap` getDirectoryContents "tests/mods"
+           `fmap` getDirectoryContents "tests/biblio2yaml"
   biblio2yamlTests <- mapM biblio2yamlTest $ fs ++ fs'
   let allTests = citeprocTests ++ biblio2yamlTests
   let numpasses  = length $ filter (== Passed) allTests
