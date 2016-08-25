@@ -974,12 +974,12 @@ toLiteralList _ = mzero
 
 toAuthorList :: Options -> [Block] -> Bib [Agent]
 toAuthorList opts [Para xs] =
-  mapM (toAuthor opts) $ splitByAnd xs
+  mapM (return . (toAuthor opts)) $ splitByAnd xs
 toAuthorList opts [Plain xs] = toAuthorList opts [Para xs]
 toAuthorList _ _ = mzero
 
-toAuthor :: Options -> [Inline] -> Bib Agent
-toAuthor _ [Str "others"] = return $
+toAuthor :: Options -> [Inline] -> Agent
+toAuthor _ [Str "others"] = 
     Agent { givenName       = []
           , droppingPart    = mempty
           , nonDroppingPart = mempty
@@ -990,7 +990,6 @@ toAuthor _ [Str "others"] = return $
           , parseNames      = False
           }
 toAuthor _ [Span ("",[],[]) ils] =
-  return $ -- corporate author
     Agent { givenName       = []
           , droppingPart    = mempty
           , nonDroppingPart = mempty
@@ -1009,14 +1008,14 @@ toAuthor _ [Span ("",[],[]) ils] =
 -- biblatex takes the whole as a last name.
 -- See https://github.com/plk/biblatex/issues/236
 -- Here we implement the more sensible biblatex behavior.
-toAuthor opts ils = do
+toAuthor opts ils =
   let useprefix = optionSet "useprefix" opts
-  let usecomma  = optionSet "juniorcomma" opts
-  let bibtex    = optionSet "bibtex" opts
-  let words' = wordsBy (\x -> x == Space || x == Str "\160")
-  let commaParts = map words' $ splitWhen (== Str ",")
+      usecomma  = optionSet "juniorcomma" opts
+      bibtex    = optionSet "bibtex" opts
+      words' = wordsBy (\x -> x == Space || x == Str "\160")
+      commaParts = map words' $ splitWhen (== Str ",")
                               $ splitStrWhen (\c -> c == ',' || c == '\160') ils
-  let (first, vonlast, jr) =
+      (first, vonlast, jr) =
           case commaParts of
                --- First is the longest sequence of white-space separated
                -- words starting with an uppercase and that is not the
@@ -1031,7 +1030,7 @@ toAuthor opts ils = do
                (vl:j:f:_) -> (f, vl, j )
                []         -> ([], [], [])
 
-  let (von, lastname) =
+      (von, lastname) =
          if bibtex
             then case span isCapitalized $ reverse vonlast of
                         ([],(w:ws))    -> (reverse ws, [w])
@@ -1039,11 +1038,11 @@ toAuthor opts ils = do
             else case span (not . isCapitalized) vonlast of
                         (vs@(_:_), []) -> (init vs, [last vs])
                         (vs, ws)       -> (vs, ws)
-  let prefix = Formatted $ intercalate [Space] von
-  let family = Formatted $ intercalate [Space] lastname
-  let suffix = Formatted $ intercalate [Space] jr
-  let givens = map Formatted first
-  return $
+      prefix = Formatted $ intercalate [Space] von
+      family = Formatted $ intercalate [Space] lastname
+      suffix = Formatted $ intercalate [Space] jr
+      givens = map Formatted first
+  in
     Agent { givenName       = givens
           , droppingPart    = if useprefix then mempty else prefix
           , nonDroppingPart = if useprefix then prefix else mempty
@@ -1053,6 +1052,7 @@ toAuthor opts ils = do
           , commaSuffix     = usecomma
           , parseNames      = False
           }
+    
 
 isCapitalized :: [Inline] -> Bool
 isCapitalized (Str (c:cs) : rest)
