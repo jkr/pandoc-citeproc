@@ -28,6 +28,8 @@ module Text.CSL.Reference ( Literal(..)
                           , toDatePart
                           , setCirca
                           , mkRefDate
+                          , parseDate
+                          , parseDates
                           , RefType(..)
                           , CNum(..)
                           , Reference(..)
@@ -111,6 +113,25 @@ isValueSet val
     | otherwise = False
 
 data Empty = Empty deriving ( Typeable, Data, Generic )
+
+parseDates :: Monad m => String-> m [RefDate]
+parseDates = mapM parseDate . splitWhen (== '/')
+
+parseDate :: Monad m => String -> m RefDate
+parseDate s = do
+  let (year', month', day') =
+        case splitWhen (== '-') s of
+             [y]     -> (y, mempty, mempty)
+             [y,m]   -> (y, m, mempty)
+             [y,m,d] -> (y, m, d)
+             _       -> (mempty, mempty, mempty)
+  return RefDate { year   = Literal $ dropWhile (=='0') year'
+                 , month  = Literal $ dropWhile (=='0') month'
+                 , season = mempty
+                 , day    = Literal $ dropWhile (=='0') day'
+                 , other  = mempty
+                 , circa  = False
+                 }
 
 data RefDate =
     RefDate { year   :: Literal

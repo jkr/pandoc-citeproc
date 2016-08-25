@@ -899,25 +899,6 @@ upToColon bs         = bs
 getDates :: String -> Bib [RefDate]
 getDates f = getRawField f >>= parseDates
 
-parseDates :: Monad m => String-> m [RefDate]
-parseDates = mapM parseDate . splitWhen (== '/')
-
-parseDate :: Monad m => String -> m RefDate
-parseDate s = do
-  let (year', month', day') =
-        case splitWhen (== '-') s of
-             [y]     -> (y, mempty, mempty)
-             [y,m]   -> (y, m, mempty)
-             [y,m,d] -> (y, m, d)
-             _       -> (mempty, mempty, mempty)
-  return RefDate { year   = Literal $ dropWhile (=='0') year'
-                 , month  = Literal $ dropWhile (=='0') month'
-                 , season = mempty
-                 , day    = Literal $ dropWhile (=='0') day'
-                 , other  = mempty
-                 , circa  = False
-                 }
-
 isNumber :: String -> Bool
 isNumber ('-':d:ds) = all isDigit (d:ds)
 isNumber (d:ds)     = all isDigit (d:ds)
