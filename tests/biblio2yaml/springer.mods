@@ -2,10 +2,10 @@
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
 <mods ID="springer">
     <titleInfo>
-        <title>Mediaeval Pilgrim Routes from Scandinavia to Rome</title>
+        <title>Mediaeval pilgrim routes from Scandinavia to Rome</title>
     </titleInfo>
     <titleInfo type="abbreviated">
-        <title>Mediaeval Pilgrim Routes</title>
+        <title>Mediaeval pilgrim routes</title>
     </titleInfo>
     <name type="personal">
         <namePart type="given">Otto</namePart>

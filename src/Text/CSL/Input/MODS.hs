@@ -17,7 +17,7 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import Data.Maybe (mapMaybe, listToMaybe)
 import qualified Data.Map as M
-import Data.Char (isSpace, toUpper, isUpper, isLower)
+import Data.Char (isSpace, toUpper, isUpper, isLower, isPunctuation)
 import Data.Monoid ((<>))
 import Data.List (nub)
 import qualified Text.Pandoc.UTF8 as UTF8
@@ -68,6 +68,7 @@ data DetailType = VolumeDetail
                 | PartDetail
                 | IssueDetail
                 | ChapterDetail
+                | NumberDetail
                 deriving (Show, Eq)
 
 data Detail = Detail { detailType :: DetailType
@@ -151,6 +152,7 @@ detailCursToDetails curs = do
         "part" -> PartDetail
         "issue" -> IssueDetail
         "chapter" -> ChapterDetail
+        "number" -> NumberDetail
         _         -> IssueDetail
       number' = child curs >>=
         element (X.Name "number" (Just modsNS) Nothing) >>=
@@ -819,6 +821,7 @@ data Role = Author
           -- | CollectionEditor
           | Composer
           -- | ContainerAuthor
+          | DegreeGrantingInstitution
           | Director
           | Editor
           -- | EditorialDirector
@@ -843,6 +846,7 @@ codeToRole code = case code of
   "ivr" -> Just Interviewer
   "rcp" -> Just Recipient
   "trl" -> Just Translator
+  "dgg" -> Just DegreeGrantingInstitution
   _     -> Nothing
 
 textToRole :: Text -> Maybe Role
@@ -856,6 +860,8 @@ textToRole txt = case T.toLower txt of
   "interviewer" -> Just Interviewer
   "addressee"   -> Just Recipient
   "translator"  -> Just Translator
+  "degree grantor" -> Just DegreeGrantingInstitution
+  "degree granting institution" -> Just DegreeGrantingInstitution
   _             -> Nothing
 
 roleCursToRole :: Cursor -> Maybe Role
@@ -884,6 +890,12 @@ doesntHaveAttribute nm c = case node c of
   X.NodeElement e | Nothing <- M.lookup nm (X.elementAttributes e) -> [c]
   _ -> []
 
+-- attributeSatisfies :: X.Name -> (Text -> Bool) -> Cursor -> [Cursor]
+-- attributeSatisfies nm f c = case node c of
+--   X.NodeElement e | Just t <- M.lookup nm (X.elementAttributes e),
+--                     f t -> [c]
+--   _ -> []
+
 periodAfterInitial :: Text -> Text
 periodAfterInitial txt = case T.uncons txt of
   Just (c, "") | isUpper c -> txt `T.snoc` '.'
@@ -906,7 +918,7 @@ nameCursToName nameCurs =
         doesntHaveAttribute (X.Name "type" Nothing Nothing) >>=
         descendant >>=
         content
-      agent = fixVon False $
+      agent = fixVon $
               emptyAgent{ familyName = case familyName' of
                             [] -> mempty
                             x : _ -> fromText x
@@ -921,43 +933,45 @@ nameCursToName nameCurs =
           , nRoles = mapMaybe roleCursToRole roles
           }
                     
-textToRefType :: Text -> RefType
-textToRefType txt = case T.toLower txt of
-  "article" -> Article
-  "magazine article" -> ArticleMagazine
-  "newspaper article" -> ArticleNewspaper
-  "journal article" -> ArticleJournal
-  "bill" -> Bill
-  "book" -> Book
-  "broadcast" -> Broadcast
-  "dataset" ->   Dataset
-  "entry"   -> Entry
-  "dictionary entry"   -> EntryDictionary
-  "encyclopedia entry"   -> EntryEncyclopedia
-  "figure"   -> Figure
-  "graphic"   -> Graphic
-  "interview"   -> Interview
-  "legislation"   -> Legislation
-  "legal case"   -> LegalCase
-  "manuscript"   -> Manuscript
-  "map"   -> Map
-  "motion picture"   -> MotionPicture
-  "musical score"   -> MusicalScore
-  "pamphlet"   -> Pamphlet
-  "conference paper" -> PaperConference
-  "patent"   -> Patent
-  "post"   -> Post
-  "weblog post"   -> PostWeblog
-  "personal communication"   -> PersonalCommunication
-  "report"   -> Report
-  "review"   -> Review
-  "book review"   -> ReviewBook
-  "song"   -> Song
-  "speech"   -> Speech
-  "thesis"   -> Thesis
-  "treaty"   -> Treaty
-  "web page" -> Webpage
-  _ -> Book
+textToRefType :: Text -> Maybe RefType
+textToRefType txt = case T.filter (not . isPunctuation) $ T.toLower txt of
+  "article" -> Just Article
+  "magazine article" -> Just ArticleMagazine
+  "newspaper article" -> Just ArticleNewspaper
+  "journal article" -> Just ArticleJournal
+  "bill" -> Just Bill
+  "book" -> Just Book
+  "broadcast" -> Just Broadcast
+  "dataset" -> Just   Dataset
+  "entry"   -> Just Entry
+  "dictionary entry"   -> Just EntryDictionary
+  "encyclopedia entry"   -> Just EntryEncyclopedia
+  "figure"   -> Just Figure
+  "graphic"   -> Just Graphic
+  "interview"   -> Just Interview
+  "legislation"   -> Just Legislation
+  "legal case"   -> Just LegalCase
+  "manuscript"   -> Just Manuscript
+  "map"   -> Just Map
+  "motion picture"   -> Just MotionPicture
+  "musical score"   -> Just MusicalScore
+  "pamphlet"   -> Just Pamphlet
+  "conference paper" -> Just PaperConference
+  "patent"   -> Just Patent
+  "post"   -> Just Post
+  "weblog post"   -> Just PostWeblog
+  "personal communication"   -> Just PersonalCommunication
+  "report"   -> Just Report
+  "review"   -> Just Review
+  "book review"   -> Just ReviewBook
+  "song"   -> Just Song
+  "speech"   -> Just Speech
+  "thesis"   -> Just Thesis
+  "phd thesis" -> Just Thesis
+  "masters thesis" -> Just Thesis
+  "treaty"   -> Just Treaty
+  "web page" -> Just Webpage
+  _ -> Nothing
 
 capitalize :: Text -> Text
 capitalize txt = case T.uncons txt of
@@ -1414,29 +1428,67 @@ getIdentByType typ ident = Literal $
                      map identText $
                      filter (\i -> identType i == typ) ident
 
--- A clumsy algorithm for dealing with "von" names. We give the option
--- of dropping or not, but there's no way of signalling it, so we will
--- assume for the moment that it drops.
-fixVon :: Bool -> Agent -> Agent
-fixVon isDropped agnt =
+-- A clumsy algorithm for dealing with "von" names. There is no option
+-- in mods for signalling dropping parts vs. non-dropping parts, so we
+-- put non-dropping parts in the family name, and dropping parts as an
+-- extra given name entry. So if we want a non-dropping part we'd do
+--
+--     <name>
+--       <namePart type="family">von Doe</namePart>
+--       <namePart type="given">John</namePart>
+--     </name>
+--
+-- but it we want a dropping part, we use
+--
+--     <name>
+--       <namePart type="family">Doe</namePart>
+--       <namePart type="given">John</namePart>
+--       <namePart type="given">de</namePart>
+--     </name>
+--
+    
+fixVon :: Agent -> Agent
+fixVon agnt =
   agnt { familyName = Formatted $ lastName
-       , droppingPart = Formatted $ if isDropped then vons' else mempty
-       , nonDroppingPart = Formatted $ if isDropped then mempty else vons'
+       , givenName = reverse $ (Formatted firstName) : gs'
+       , droppingPart = Formatted $ dVons'
+       , nonDroppingPart = Formatted $ ndVons'
        }
-  where vons' = reverse $ dropWhile (P.Space==) $ reverse vons
-        (vons, lastName) = span f ils
+  where ndVons' = reverse $ dropWhile (P.Space==) $ reverse ndVons
+        (ndVons, lastName) = span f fIls
+        fIls = unFormatted $ familyName agnt
+
+        dVons' = reverse $ dropWhile (P.Space==) $ reverse dVons
+        (dVons, firstName, gs') = case reverse $ givenName agnt of
+          g : gs -> (\(x, y) -> (x, y, gs)) $ span f $ unFormatted g
+          [] ->     (mempty, mempty, mempty)
+
         f (P.Str (c:_)) = isLower c
         f P.Space = True
         f _ = False
-        ils = unFormatted $ familyName agnt
+
+        
+agentsToPublisher :: [Agent] -> Formatted
+agentsToPublisher agents = listToMonoid $ map literal agents
+
+isArticle :: RefType -> Bool
+isArticle Article = True
+isArticle ArticleMagazine = True
+isArticle ArticleJournal = True
+isArticle ArticleNewspaper = True
+isArticle _ = False
 
 modsRefToReference' :: ModsReference -> Reference
 modsRefToReference' modsRef =
   let names = individuateNames $ modsNames modsRef
       titleInfo = resolveTitleInfos $ modsTitleInfo modsRef
-      genre' = listToMonoid $ modsGenre modsRef
+      genres' = modsGenre modsRef
+      refType' = case listToMaybe $ mapMaybe textToRefType genres' of
+                   Just r -> r
+                   Nothing -> Book
   in
-      emptyReference{ refId = Literal $ T.unpack $  getId modsRef
+    emptyReference{ refType = refType'
+                  , refId = Literal $ T.unpack $  getId modsRef
                   , title = fromText $ tiToFullTitle titleInfo
                   , titleShort = fromText $ tiToShortTitle titleInfo 
                   , author = getAgentsByRole Author names
@@ -1472,20 +1524,26 @@ modsRefToReference' modsRef =
                   , issued = nub $ 
                              (concatMap partDate $ modsPart modsRef) ++
                              (concatMap origIssued $ modsOriginInfo modsRef)
-                  , publisher = fromText $
-                                listToMonoid $
-                                concatMap origPublisher $ 
-                                modsOriginInfo modsRef
+                  , publisher = case refType' of
+                      Thesis -> agentsToPublisher $ 
+                                getAgentsByRole DegreeGrantingInstitution names
+                      _ -> fromText $
+                           listToMonoid $
+                           concatMap origPublisher $ 
+                           modsOriginInfo modsRef
                   , publisherPlace = fromText $
                                      T.intercalate "; " $
                                      concatMap origPlace $ 
                                      modsOriginInfo modsRef
+                  -- we specify the genre if it's a thesis
+                  , genre = case refType' of
+                      Thesis -> fromText $ listToMonoid $ genres'
+                      _      -> mempty
+                                     
                   , edition = fromText $
                               listToMonoid $
                               concatMap origEdition $ 
                               modsOriginInfo modsRef
-                  , refType = textToRefType genre'
-
                   , page = fromText $
                            partsToPage $
                            modsPart modsRef
@@ -1496,6 +1554,11 @@ modsRefToReference' modsRef =
                   , issue = fromText $
                              partsToDetail IssueDetail $
                              modsPart modsRef
+                  , number = fromText $
+                             partsToDetail NumberDetail $
+                             modsPart modsRef
+
+                             
 
                   , isbn = getIdentByType ISBN $ modsIdent modsRef
                   , issn = getIdentByType ISSN $ modsIdent modsRef

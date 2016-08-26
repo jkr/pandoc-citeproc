@@ -2,7 +2,7 @@
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
 <mods ID="herrmann">
     <titleInfo>
-        <title>A Carbocyclic Carbene as an Efficient Catalyst Ligand for C–C Coupling Reactions</title>
+        <title>A carbocyclic carbene as an efficient catalyst ligand for C–C coupling reactions</title>
     </titleInfo>
     <name type="personal">
         <namePart type="given">Wolfgang</namePart>
@@ -93,7 +93,7 @@ references:
   issued:
   - year: '2006'
   title: A carbocyclic carbene as an efficient catalyst ligand for C–C coupling reactions
-  container-title: Angew. Chem. Int. Ed.
+  container-title: Angew. Chem. Int. Ed.
   page: '3859-3862'
   volume: '45'
   issue: '23'

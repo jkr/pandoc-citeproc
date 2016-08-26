@@ -2,12 +2,13 @@
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
 <mods ID="geer">
     <titleInfo>
-        <title>Earl, Saint, Bishop, Skald – and Music</title>
-        <subTitle>The Orkney Earldom of the Twelfth Century. A Musicological Study</subTitle>
+        <title>Earl, saint, bishop, skald – and music</title>
+        <subTitle>The Orkney earldom of the twelfth century. A musicological study</subTitle>
     </titleInfo>
     <name type="personal">
-        <namePart type="given">Ingrid</namePart>
-        <namePart type="family">de Geer</namePart>
+      <namePart type="given">Ingrid</namePart>
+      <namePart type="given">de</namePart>
+      <namePart type="family">Geer</namePart>
         <role>
             <roleTerm authority="marcrelator" type="text">author</roleTerm>
         </role>
@@ -25,7 +26,7 @@
         </place>
     </originInfo>
     <typeOfResource>text</typeOfResource>
-    <genre>Ph.D. thesis</genre>
+    <genre>PhD thesis</genre>
     <genre authority="marcgt">thesis</genre>
     <note type="annotation">This is a typical thesis entry for a PhD thesis. Note the type field in the database file which uses a localization key. Also note the format of the printed name and compare the useprefix option in the options field as well as vangennep</note>
     <identifier type="citekey">geer</identifier>
@@ -37,7 +38,7 @@
 </mods>
 <mods ID="loh">
     <titleInfo>
-        <title>High-Resolution Micromachined Interferometric Accelerometer</title>
+        <title>High-resolution micromachined interferometric accelerometer</title>
     </titleInfo>
     <name type="personal">
         <namePart type="given">Nin</namePart>
@@ -60,7 +61,7 @@
         </place>
     </originInfo>
     <typeOfResource>text</typeOfResource>
-    <genre>Masters thesis</genre>
+    <genre>Master’s thesis</genre>
     <genre authority="marcgt">thesis</genre>
     <note type="annotation">This is a typical thesis entry for an MA thesis. Note the type field in the database file which uses a localization key</note>
     <identifier type="citekey">loh</identifier>
@@ -83,9 +84,9 @@ references:
     dropping-particle: de
   issued:
   - year: '1985'
-  title: 'Earl, saint, bishop, skald – and music: The Orkney earldom of the twelfth
+  title: 'Earl, saint, bishop, skald – and music: The Orkney earldom of the twelfth
     century. A musicological study'
-  title-short: Earl, saint, bishop, skald – and music
+  title-short: Earl, saint, bishop, skald – and music
   publisher: Uppsala Universitet
   publisher-place: Uppsala
   genre: PhD thesis

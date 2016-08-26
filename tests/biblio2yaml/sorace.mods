@@ -2,7 +2,7 @@
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
 <mods ID="sorace">
     <titleInfo>
-        <title>High-Speed Digital-to-RF Converter</title>
+        <title>High-speed digital-to-RF converter</title>
     </titleInfo>
     <name type="personal">
         <namePart type="given">Ronald</namePart>
@@ -40,7 +40,7 @@
         <dateIssued>1997-09-16</dateIssued>
     </originInfo>
     <typeOfResource>text</typeOfResource>
-    <genre>patentus</genre>
+    <!-- <genre>patentus</genre> -->
     <genre authority="marcgt">patent</genre>
     <note type="annotation">This is a patent entry with a holder field. Note the format of the type and date fields in the database file. Compare almendro, laufenberg, and kowalik</note>
     <identifier type="citekey">sorace</identifier>
@@ -72,7 +72,6 @@ references:
     month: '9'
     day: '16'
   title: High-speed digital-to-RF converter
-  genre: U.S. patent
   annote: This is a patent entry with a holder field. Note the format of the type
     and date fields in the database file. Compare almendro, laufenberg, and kowalik
   number: '5668842'
