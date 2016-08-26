@@ -2,7 +2,7 @@
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
 <mods ID="salam">
     <titleInfo>
-        <title>Weak and Electromagnetic Interactions</title>
+        <title>Weak and electromagnetic interactions</title>
     </titleInfo>
     <name type="personal">
         <namePart type="given">Abdus</namePart>
@@ -22,7 +22,7 @@
     <relatedItem type="host">
         <titleInfo>
             <title>Elementary particle theory</title>
-            <subTitle>Relativistic groups and analyticity. Proceedings of the Eighth Nobel Symposium</subTitle>
+            <subTitle>Relativistic groups and analyticity. Proceedings of the eighth Nobel symposium</subTitle>
         </titleInfo>
         <name type="personal">
             <namePart type="given">Nils</namePart>

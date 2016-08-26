@@ -40,7 +40,7 @@ main = do
            `fmap` getDirectoryContents "tests/biblio2yaml"
   -- biblio2yamlTests <- mapM biblio2yamlTest $ fs ++ fs'
   -- let allTests = citeprocTests ++ biblio2yamlTests
-  biblio2yamlTests <- mapM biblio2yamlTest $ reverse $ take 20 $ reverse $ sort fs'
+  biblio2yamlTests <- mapM biblio2yamlTest $ reverse $ take 25 $ reverse $ sort fs'
   let allTests = citeprocTests ++ biblio2yamlTests
   let numpasses  = length $ filter (== Passed) allTests
   let numskipped = length $ filter (== Skipped) allTests

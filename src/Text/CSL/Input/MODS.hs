@@ -957,6 +957,7 @@ textToRefType txt = case T.filter (not . isPunctuation) $ T.toLower txt of
   "musical score"   -> Just MusicalScore
   "pamphlet"   -> Just Pamphlet
   "conference paper" -> Just PaperConference
+  "conference publication" -> Just PaperConference
   "patent"   -> Just Patent
   "post"   -> Just Post
   "weblog post"   -> Just PostWeblog
@@ -1308,7 +1309,7 @@ getChildRefType hostModsRef childModsRef =
       | hostGenre' == "newspaper" -> ArticleNewspaper
       | childGenre' == "article" -> ArticleJournal
       | hostGenre' == "collection" -> Chapter
-      | childGenre' == "conference publication" -> Chapter
+      | hostGenre' == "conference publication" -> PaperConference
       | hostGenre' == "book" -> Chapter
       | childGenre' == "book" -> Book
       | Just Monographic <- mChildIssuance -> Book
@@ -1386,6 +1387,9 @@ withHostInfo hostModsRef childModsRef =
       , recipient = recipient childRef ++ recipient hostRef
       , publisher = replaceIfNonEmpty publisher hostRef childRef
       , publisherPlace = replaceIfNonEmpty publisherPlace hostRef childRef
+      , eventPlace = if isEvent childRefType
+                     then publisherPlace childRef
+                     else eventPlace childRef
       , volume = replaceIfNonEmpty volume hostRef childRef
       -- if the reftype is an article, then we want to switch the
       -- number to an issue
@@ -1485,6 +1489,10 @@ isArticle ArticleMagazine = True
 isArticle ArticleJournal = True
 isArticle ArticleNewspaper = True
 isArticle _ = False
+
+isEvent :: RefType -> Bool
+isEvent PaperConference = True
+isEvent _ = False
 
 modsRefToReference' :: ModsReference -> Reference
 modsRefToReference' modsRef =
