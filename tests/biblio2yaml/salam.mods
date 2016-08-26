@@ -12,8 +12,8 @@
         </role>
     </name>
     <originInfo>
-        <issuance>monographic</issuance>
-        <dateIssued>1968</dateIssued>
+        <dateIssued>1968-5-19</dateIssued>
+	<dateIssued>1968-5-25</dateIssued>
         <place>
             <placeTerm type="text">Aspenäsgarden, Lerum</placeTerm>
         </place>
@@ -36,6 +36,7 @@
             <place>
                 <placeTerm type="text">Stockholm</placeTerm>
             </place>
+            <dateIssued>1968</dateIssued>
         </originInfo>
         <genre authority="marcgt">conference publication</genre>
     </relatedItem>

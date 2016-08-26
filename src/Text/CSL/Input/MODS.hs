@@ -1390,6 +1390,10 @@ withHostInfo hostModsRef childModsRef =
       , eventPlace = if isEvent childRefType
                      then publisherPlace childRef
                      else eventPlace childRef
+      , issued = replaceIfNonEmpty issued hostRef childRef
+      , eventDate = if isEvent childRefType
+                    then issued childRef
+                    else eventDate childRef
       , volume = replaceIfNonEmpty volume hostRef childRef
       -- if the reftype is an article, then we want to switch the
       -- number to an issue
@@ -1402,7 +1406,6 @@ withHostInfo hostModsRef childModsRef =
           False -> replaceIfNonEmpty number hostRef childRef
 
       , page = replaceIfNonEmpty page hostRef childRef
-      , issued = replaceIfNonEmpty issued hostRef childRef
       , note = replaceIfNonEmpty note hostRef childRef
       , keyword = replaceIfNonEmpty keyword hostRef childRef
 

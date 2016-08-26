@@ -2,7 +2,7 @@
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
 <mods ID="chiu">
     <titleInfo>
-        <title>A Hybrid Hierarchical Model of a Multiple Virtual Storage (MVS) Operating System</title>
+        <title>A hybrid hierarchical model of a Multiple Virtual Storage (MVS) operating system</title>
     </titleInfo>
     <name type="personal">
         <namePart type="given">Willy</namePart>
@@ -45,7 +45,7 @@
 </mods>
 <mods ID="padhye">
     <titleInfo>
-        <title>A Stochastic Model of TCP Reno Congestion Avoidance and Control</title>
+        <title>A stochastic model of TCP Reno congestion avoidance and control</title>
     </titleInfo>
     <name type="personal">
         <namePart type="given">Jitendra</namePart>
