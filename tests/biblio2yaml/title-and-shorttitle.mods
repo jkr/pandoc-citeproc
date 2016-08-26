@@ -2,11 +2,11 @@
 <modsCollection xmlns="http://www.loc.gov/mods/v3">
 <mods ID="item4">
     <titleInfo>
-        <title>The Title: With a Colon in the “Title” Field</title>
-        <subTitle>And a Subtitle, in Two Separate Fields; plus a Separate “Shorttitle” Field</subTitle>
+        <title>The title: With a colon in the “title” field</title>
+        <subTitle>And a subtitle, in two separate fields; plus a separate “shorttitle” field</subTitle>
     </titleInfo>
     <titleInfo type="abbreviated">
-        <title>The Shorttitle</title>
+        <title>The shorttitle</title>
     </titleInfo>
     <originInfo>
         <issuance>monographic</issuance>
@@ -17,8 +17,8 @@
 </mods>
 <mods ID="item3">
     <titleInfo>
-        <title>The Title: With a Colon in the “title” field</title>
-        <subTitle>And a Subtitle, in two separate fields</subTitle>
+        <title>The title: With a colon in the “title” field</title>
+        <subTitle>And a subtitle, in two separate fields</subTitle>
     </titleInfo>
     <originInfo>
         <issuance>monographic</issuance>
@@ -29,8 +29,8 @@
 </mods>
 <mods ID="item2">
     <titleInfo>
-        <title>The Title</title>
-        <subTitle>The Subtitle, In Two Separate fields</subTitle>
+        <title>The title</title>
+        <subTitle>The subtitle, in two separate fields</subTitle>
     </titleInfo>
     <originInfo>
         <issuance>monographic</issuance>
@@ -41,7 +41,7 @@
 </mods>
 <mods ID="item1">
     <titleInfo>
-        <title>The Title: And the Subtitle, all in the “title” Field</title>
+        <title>The title: And the subtitle, all in the “title” field</title>
     </titleInfo>
     <originInfo>
         <issuance>monographic</issuance>
@@ -50,32 +50,12 @@
     <genre authority="marcgt">book</genre>
     <identifier type="citekey">item1</identifier>
 </mods>
-<mods ID="item5">
-    <titleInfo>
-        <title>The inbook Title: And the Subtitle, all in the “title” Field The Title: And the Subtitle, all in the “title” Field</title>
-    </titleInfo>
-    <titleInfo type="abbreviated">
-        <title>The Shorttitle</title>
-    </titleInfo>
-    <typeOfResource>text</typeOfResource>
-    <genre>book chapter</genre>
-    <relatedItem type="host">
-        <titleInfo>
-            <title/>
-        </titleInfo>
-        <originInfo>
-            <issuance>monographic</issuance>
-        </originInfo>
-        <genre authority="marcgt">book</genre>
-    </relatedItem>
-    <identifier type="citekey">item5</identifier>
-</mods>
 <mods ID="item6">
     <titleInfo>
-        <title>The Title: And the Subtitle, all in the “title” Field</title>
+        <title>The title: And the subtitle, all in the “title” field</title>
     </titleInfo>
     <titleInfo type="abbreviated">
-        <title>The Shorttitle</title>
+        <title>The shorttitle</title>
     </titleInfo>
     <originInfo>
         <issuance>monographic</issuance>
@@ -110,12 +90,6 @@ references:
   type: book
   title: 'The title: And the subtitle, all in the “title” field'
   title-short: The title
-
-- id: item5
-  type: chapter
-  title: 'The inbook title: And the subtitle, all in the “title” field'
-  title-short: The inbook title
-  container-title: 'The title: And the subtitle, all in the “title” field'
 
 - id: item6
   type: book

@@ -1158,10 +1158,10 @@ tiToShortTitle ti | null $ titleInfoAbbreviated ti =
   let t = listToMonoid $ titleInfoTitle ti
       st = listToMonoid $ titleInfoSubTitle ti
   in case () of
-    _ | t /= mempty && st /= mempty -> t
-      | (t', st') <- T.span (':'/=) t
+    _ | (t', st') <- T.span (':'/=) t
       , t' /= mempty
       , st' /= mempty -> t'
+      | t /= mempty && st /= mempty -> t
       | otherwise -> mempty
 tiToShortTitle ti = listToMonoid $ titleInfoAbbreviated ti
 
