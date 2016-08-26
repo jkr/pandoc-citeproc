@@ -17,7 +17,7 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import Data.Maybe (mapMaybe, listToMaybe)
 import qualified Data.Map as M
-import Data.Char (isSpace, toUpper, isUpper)
+import Data.Char (isSpace, toUpper, isUpper, isLower)
 import Data.Monoid ((<>))
 import Data.List (nub)
 import qualified Text.Pandoc.UTF8 as UTF8
@@ -906,7 +906,8 @@ nameCursToName nameCurs =
         doesntHaveAttribute (X.Name "type" Nothing Nothing) >>=
         descendant >>=
         content
-      agent = emptyAgent{ familyName = case familyName' of
+      agent = fixVon False $
+              emptyAgent{ familyName = case familyName' of
                             [] -> mempty
                             x : _ -> fromText x
                         , givenName = map (fromText . periodAfterInitial) givenName'
@@ -1412,6 +1413,22 @@ getIdentByType typ ident = Literal $
                      listToMonoid $
                      map identText $
                      filter (\i -> identType i == typ) ident
+
+-- A clumsy algorithm for dealing with "von" names. We give the option
+-- of dropping or not, but there's no way of signalling it, so we will
+-- assume for the moment that it drops.
+fixVon :: Bool -> Agent -> Agent
+fixVon isDropped agnt =
+  agnt { familyName = Formatted $ lastName
+       , droppingPart = Formatted $ if isDropped then vons' else mempty
+       , nonDroppingPart = Formatted $ if isDropped then mempty else vons'
+       }
+  where vons' = reverse $ dropWhile (P.Space==) $ reverse vons
+        (vons, lastName) = span f ils
+        f (P.Str (c:_)) = isLower c
+        f P.Space = True
+        f _ = False
+        ils = unFormatted $ familyName agnt
 
 modsRefToReference' :: ModsReference -> Reference
 modsRefToReference' modsRef =
