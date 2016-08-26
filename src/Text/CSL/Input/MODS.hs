@@ -1356,7 +1356,8 @@ withHostInfo hostModsRef childModsRef =
         else ref
   in
     containerToCollection $ 
-    childRef { containerAuthor = author hostRef
+    childRef { refType = childRefType
+             , containerAuthor = author hostRef
       , title = if childRefType == Chapter && hostGenre /= "collection"
                 then title hostRef
                 else title childRef
@@ -1386,7 +1387,16 @@ withHostInfo hostModsRef childModsRef =
       , publisher = replaceIfNonEmpty publisher hostRef childRef
       , publisherPlace = replaceIfNonEmpty publisherPlace hostRef childRef
       , volume = replaceIfNonEmpty volume hostRef childRef
-      , issue = replaceIfNonEmpty issue hostRef childRef
+      -- if the reftype is an article, then we want to switch the
+      -- number to an issue
+      , issue = case isArticle childRefType of
+                  True | number hostRef /= mempty -> number hostRef
+                       | number childRef /= mempty -> number childRef
+                  _ -> replaceIfNonEmpty issue hostRef childRef
+      , number = case isArticle childRefType of
+          True -> mempty
+          False -> replaceIfNonEmpty number hostRef childRef
+
       , page = replaceIfNonEmpty page hostRef childRef
       , issued = replaceIfNonEmpty issued hostRef childRef
       , note = replaceIfNonEmpty note hostRef childRef
@@ -1396,9 +1406,7 @@ withHostInfo hostModsRef childModsRef =
       , issn = replaceIfNonEmpty issn hostRef childRef
       , url = replaceIfNonEmpty url hostRef childRef
 
-      , refType = childRefType
 
-      -- ...
       }
 
   
@@ -1515,7 +1523,6 @@ modsRefToReference' modsRef =
                              (\n -> case n of
                                       Annotation txt -> [txt]
                                       _ -> [])
-
                   , keyword = fromText $
                               T.intercalate "; " $
                               subjectsToSubjText $
