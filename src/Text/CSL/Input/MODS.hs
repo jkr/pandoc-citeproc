@@ -1569,6 +1569,7 @@ modsRefToReference' modsRef =
 
                   , isbn = getIdentByType ISBN $ modsIdent modsRef
                   , issn = getIdentByType ISSN $ modsIdent modsRef
+                  , doi = getIdentByType DOI $ modsIdent modsRef
                   , url =
                       let locUrl' = listToMonoid $
                                     concatMap locUrl $

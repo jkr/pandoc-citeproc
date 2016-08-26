@@ -21,7 +21,7 @@ import Text.Pandoc.Options (WriterOptions(..))
 import qualified Data.Yaml as Yaml
 import Text.Pandoc (writeNative, writeHtmlString, readNative, def)
 import Text.CSL.Pandoc (processCites')
-import Data.List (isSuffixOf)
+import Data.List (isSuffixOf, sort)
 import System.Environment
 import Control.Monad (when)
 
@@ -40,7 +40,7 @@ main = do
            `fmap` getDirectoryContents "tests/biblio2yaml"
   -- biblio2yamlTests <- mapM biblio2yamlTest $ fs ++ fs'
   -- let allTests = citeprocTests ++ biblio2yamlTests
-  biblio2yamlTests <- mapM biblio2yamlTest $ reverse $ take 20 $ reverse fs'
+  biblio2yamlTests <- mapM biblio2yamlTest $ reverse $ take 20 $ reverse $ sort fs'
   let allTests = citeprocTests ++ biblio2yamlTests
   let numpasses  = length $ filter (== Passed) allTests
   let numskipped = length $ filter (== Skipped) allTests
